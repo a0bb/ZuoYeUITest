@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20171206 17:03:22.408" generator="Robot 3.0.2 (Python 2.7.13 on win32)">
+<suite source="C:\Git\IntelligentCorrection\tc" id="s1" name="Tc">
+<suite source="C:\Git\IntelligentCorrection\tc\智能批改系统" id="s1-s1" name="智能批改系统">
+<kw type="setup" name="Open Browser" library="pylib.WebOp">
+<status status="PASS" endtime="20171206 17:03:26.396" starttime="20171206 17:03:22.888"></status>
+</kw>
+<suite source="C:\Git\IntelligentCorrection\tc\智能批改系统\教师端" id="s1-s1-s1" name="教师端">
+<kw type="setup" name="Login Web Site Teacher" library="pylib.WebOpTeacher">
+<arguments>
+<arg>&amp;{TeacherUser}[name]</arg>
+<arg>&amp;{TeacherUser}[pw]</arg>
+</arguments>
+<status status="PASS" endtime="20171206 17:03:53.419" starttime="20171206 17:03:26.432"></status>
+</kw>
+<suite source="C:\Git\IntelligentCorrection\tc\智能批改系统\教师端\d_SU高中英语（模板出卷）" id="s1-s1-s1-s1" name="d SU高中英语（模板出卷）">
+<kw type="setup" name="Template" library="pylib.PrepareExercise">
+<arguments>
+<arg>d_SU高中英语（模板出卷）</arg>
+</arguments>
+<status status="PASS" endtime="20171206 17:04:29.359" starttime="20171206 17:03:53.446"></status>
+</kw>
+<suite source="C:\Git\IntelligentCorrection\tc\智能批改系统\教师端\d_SU高中英语（模板出卷）\d_提交9张试卷_SU高中英语（模板出卷）" id="s1-s1-s1-s1-s1" name="d 提交9张试卷 SU高中英语（模板出卷）">
+<suite source="C:\Git\IntelligentCorrection\tc\智能批改系统\教师端\d_SU高中英语（模板出卷）\d_提交9张试卷_SU高中英语（模板出卷）\提交作业.robot" id="s1-s1-s1-s1-s1-s1" name="提交作业">
+<test id="s1-s1-s1-s1-s1-s1-t1" name="提交作业 -- 0001">
+<kw name="Submit Home Work" library="pylib.WebOpTeacher">
+<arguments>
+<arg>d_SU高中英语（模板出卷）</arg>
+</arguments>
+<status status="PASS" endtime="20171206 17:04:48.592" starttime="20171206 17:04:29.374"></status>
+</kw>
+<status status="PASS" endtime="20171206 17:04:48.594" critical="yes" starttime="20171206 17:04:29.372"></status>
+</test>
+<status status="PASS" endtime="20171206 17:04:48.601" starttime="20171206 17:04:29.364"></status>
+</suite>
+<status status="PASS" endtime="20171206 17:04:48.622" starttime="20171206 17:04:29.359"></status>
+</suite>
+<suite source="C:\Git\IntelligentCorrection\tc\智能批改系统\教师端\d_SU高中英语（模板出卷）\d_查看成绩_SU高中英语（模板出卷）" id="s1-s1-s1-s1-s2" name="d 查看成绩 SU高中英语（模板出卷）">
+<suite source="C:\Git\IntelligentCorrection\tc\智能批改系统\教师端\d_SU高中英语（模板出卷）\d_查看成绩_SU高中英语（模板出卷）\查看成绩.robot" id="s1-s1-s1-s1-s2-s1" name="查看成绩">
+<test id="s1-s1-s1-s1-s2-s1-t1" name="后台发布成绩--0002">
+<kw name="Login Web Site Admin" library="pylib.WebOpAdmin">
+<status status="PASS" endtime="20171206 17:05:20.138" starttime="20171206 17:04:48.672"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10</arg>
+</arguments>
+<msg timestamp="20171206 17:05:30.139" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" endtime="20171206 17:05:30.140" starttime="20171206 17:05:20.139"></status>
+</kw>
+<kw name="Choose Test" library="pylib.DealwithExam">
+<arguments>
+<arg>d_SU高中英语（模板出卷）</arg>
+</arguments>
+<status status="PASS" endtime="20171206 17:05:32.093" starttime="20171206 17:05:30.143"></status>
+</kw>
+<kw name="Tu Pian Yu Chu Li" library="pylib.DealwithExam">
+<status status="PASS" endtime="20171206 17:05:33.077" starttime="20171206 17:05:32.096"></status>
+</kw>
+<kw name="Tu Pian Yu Xue Sheng" library="pylib.DealwithExam">
+<status status="PASS" endtime="20171206 17:05:34.385" starttime="20171206 17:05:33.078"></status>
+</kw>
+<kw name="Tu Pian Yu Cheng Ji" library="pylib.DealwithExam">
+<status status="PASS" endtime="20171206 17:06:35.602" starttime="20171206 17:05:34.389"></status>
+</kw>
+<kw name="Xue Sheng Cheng Ji" library="pylib.DealwithExam">
+<status status="PASS" endtime="20171206 17:06:35.996" starttime="20171206 17:06:35.608"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20171206 17:06:36.997" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20171206 17:06:36.997" starttime="20171206 17:06:35.996"></status>
+</kw>
+<status status="PASS" endtime="20171206 17:06:36.998" critical="yes" starttime="20171206 17:04:48.668"></status>
+</test>
+<test id="s1-s1-s1-s1-s2-s1-t2" name="下载各个报告--0003">
+<kw name="Change Handle" library="pylib.Toolkit">
+<arguments>
+<arg>智能批改</arg>
+</arguments>
+<status status="PASS" endtime="20171206 17:06:37.698" starttime="20171206 17:06:37.000"></status>
+</kw>
+<kw name="Download File" library="pylib.WebOpTeacher">
+<arguments>
+<arg>d_SU高中英语（模板出卷）</arg>
+</arguments>
+<msg timestamp="20171206 17:06:43.512" level="FAIL">IndexError: list index out of range</msg>
+<status status="FAIL" endtime="20171206 17:06:43.513" starttime="20171206 17:06:37.699"></status>
+</kw>
+<status status="FAIL" endtime="20171206 17:06:43.514" critical="yes" starttime="20171206 17:06:36.999">IndexError: list index out of range</status>
+</test>
+<status status="FAIL" endtime="20171206 17:06:43.523" starttime="20171206 17:04:48.656"></status>
+</suite>
+<status status="FAIL" endtime="20171206 17:06:43.537" starttime="20171206 17:04:48.643"></status>
+</suite>
+<status status="FAIL" endtime="20171206 17:06:43.546" starttime="20171206 17:03:53.420"></status>
+</suite>
+<status status="FAIL" endtime="20171206 17:06:43.553" starttime="20171206 17:03:26.396"></status>
+</suite>
+<kw type="teardown" name="Close Browser" library="pylib.WebOp">
+<status status="PASS" endtime="20171206 17:06:46.748" starttime="20171206 17:06:43.557"></status>
+</kw>
+<status status="FAIL" endtime="20171206 17:06:46.749" starttime="20171206 17:03:22.463"></status>
+</suite>
+<status status="FAIL" endtime="20171206 17:06:46.770" starttime="20171206 17:03:22.413"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="2">Critical Tests</stat>
+<stat fail="1" pass="2">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="Tc" pass="2">Tc</stat>
+<stat fail="1" id="s1-s1" name="智能批改系统" pass="2">Tc.智能批改系统</stat>
+<stat fail="1" id="s1-s1-s1" name="教师端" pass="2">Tc.智能批改系统.教师端</stat>
+<stat fail="1" id="s1-s1-s1-s1" name="d SU高中英语（模板出卷）" pass="2">Tc.智能批改系统.教师端.d SU高中英语（模板出卷）</stat>
+<stat fail="0" id="s1-s1-s1-s1-s1" name="d 提交9张试卷 SU高中英语（模板出卷）" pass="1">Tc.智能批改系统.教师端.d SU高中英语（模板出卷）.d 提交9张试卷 SU高中英语（模板出卷）</stat>
+<stat fail="0" id="s1-s1-s1-s1-s1-s1" name="提交作业" pass="1">Tc.智能批改系统.教师端.d SU高中英语（模板出卷）.d 提交9张试卷 SU高中英语（模板出卷）.提交作业</stat>
+<stat fail="1" id="s1-s1-s1-s1-s2" name="d 查看成绩 SU高中英语（模板出卷）" pass="1">Tc.智能批改系统.教师端.d SU高中英语（模板出卷）.d 查看成绩 SU高中英语（模板出卷）</stat>
+<stat fail="1" id="s1-s1-s1-s1-s2-s1" name="查看成绩" pass="1">Tc.智能批改系统.教师端.d SU高中英语（模板出卷）.d 查看成绩 SU高中英语（模板出卷）.查看成绩</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
