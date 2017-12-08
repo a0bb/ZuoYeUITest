@@ -2,36 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bee906aa-af61-48f4-8185-d2bbb83791d7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pylib/stime.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tc/智能批改系统/教师端/test.robot" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/download/file/2017-12-04/en-US-7-1.bdic" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/download/file/2017-12-04/各班作答明细（全年级成绩明细）.zip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/download/file/2017-12-04/各班成绩单（全年级成绩单）.zip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/download/file/2017-12-04/年级成绩单.xls" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/download/file/2017-12-04/年级试题分析表.xls" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/download/file/2017-12-04/批阅报告.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/download/file/2017-12-04/班级作答明细.xls" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/download/file/2017-12-04/班级成绩单.xls" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Statistics.txt" afterPath="$PROJECT_DIR$/Statistics.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cfg.py" afterPath="$PROJECT_DIR$/cfg.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log.html" afterPath="$PROJECT_DIR$/log.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/output.xml" afterPath="$PROJECT_DIR$/output.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pylib/222.py" afterPath="$PROJECT_DIR$/pylib/222.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pylib/DealwithExam.py" afterPath="$PROJECT_DIR$/pylib/DealwithExam.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pylib/PrepareExercise.py" afterPath="$PROJECT_DIR$/pylib/PrepareExercise.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pylib/Result.py" afterPath="$PROJECT_DIR$/pylib/Result.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pylib/Toolkit.py" afterPath="$PROJECT_DIR$/pylib/Toolkit.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pylib/WebOp.py" afterPath="$PROJECT_DIR$/pylib/WebOp.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pylib/WebOpAdmin.py" afterPath="$PROJECT_DIR$/pylib/WebOpAdmin.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pylib/WebOpTeacher.py" afterPath="$PROJECT_DIR$/pylib/WebOpTeacher.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/report.html" afterPath="$PROJECT_DIR$/report.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tc/智能批改系统/教师端/d_SU高中英语（出卷服务）/出卷服务.robot" afterPath="$PROJECT_DIR$/tc/智能批改系统/教师端/d_SU高中英语（出卷服务）/出卷服务.robot" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tc/智能批改系统/教师端/d_SU高中英语（模板出卷）/__init__.robot" afterPath="$PROJECT_DIR$/tc/智能批改系统/教师端/d_SU高中英语（模板出卷）/__init__.robot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tc/智能批改系统/教师端/d_SU高中英语（模板出卷）/d_提交9张试卷_SU高中英语（模板出卷）/提交作业.robot" afterPath="$PROJECT_DIR$/tc/智能批改系统/教师端/d_SU高中英语（模板出卷）/d_提交9张试卷_SU高中英语（模板出卷）/提交作业.robot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tc/智能批改系统/教师端/d_SU高中英语（模板出卷）/d_查看成绩_SU高中英语（模板出卷）/查看成绩.robot" afterPath="$PROJECT_DIR$/tc/智能批改系统/教师端/d_SU高中英语（模板出卷）/d_查看成绩_SU高中英语（模板出卷）/查看成绩.robot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tc/智能批改系统/教师端/d_SU高中英语（模板出卷）/模板出卷.robot" afterPath="$PROJECT_DIR$/tc/智能批改系统/教师端/d_SU高中英语（模板出卷）/模板出卷.robot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tc/智能批改系统/邮件发送/邮件发送.robot" afterPath="$PROJECT_DIR$/tc/智能批改系统/邮件发送/邮件发送.robot" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -70,8 +41,8 @@
       <file leaf-file-name="查看成绩.robot" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tc/智能批改系统/教师端/d_SU高中英语（模板出卷）/d_查看成绩_SU高中英语（模板出卷）/查看成绩.robot">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="620">
-              <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+            <state relative-caret-position="580">
+              <caret line="29" column="27" lean-forward="false" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
               <folding>
                 <element signature="e#0#181#0" expanded="true" />
               </folding>
@@ -81,6 +52,36 @@
       </file>
       <file leaf-file-name="试卷库出卷.robot" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tc/智能批改系统/教师端/d_SU高中英语（试卷库出卷）/试卷库出卷.robot">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="考试列表.robot" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tc/智能批改系统/管理后台/考试列表.robot">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="__init__.robot" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tc/智能批改系统/管理后台/__init__.robot">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="自助出卷.robot" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tc/智能批改系统/教师端/d_SU高中英语（自助出卷）/自助出卷.robot">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -99,6 +100,18 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="__init__.robot" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tc/智能批改系统/教师端/__init__.robot">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="160">
+              <caret line="8" column="14" lean-forward="true" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+              <folding>
+                <element signature="e#0#182#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="提交作业.robot" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tc/智能批改系统/教师端/d_SU高中英语（模板出卷）/d_提交9张试卷_SU高中英语（模板出卷）/提交作业.robot">
           <provider selected="true" editor-type-id="text-editor">
@@ -111,59 +124,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="__init__.robot" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tc/智能批改系统/教师端/__init__.robot">
+      <file leaf-file-name="出卷服务.robot" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tc/智能批改系统/教师端/d_SU高中英语（出卷服务）/出卷服务.robot">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="8" column="12" lean-forward="true" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="__init__.robot" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tc/智能批改系统/__init__.robot">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="4" column="28" lean-forward="true" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Toolkit.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pylib/Toolkit.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="309">
-              <caret line="116" column="4" lean-forward="false" selection-start-line="116" selection-start-column="4" selection-end-line="116" selection-end-column="4" />
+            <state relative-caret-position="380">
+              <caret line="19" column="40" lean-forward="false" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
               <folding>
-                <element signature="e#15#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="__init__.robot" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tc/智能批改系统/教师端/d_SU高中英语（模板出卷）/__init__.robot">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="18" column="50" lean-forward="false" selection-start-line="18" selection-start-column="50" selection-end-line="18" selection-end-column="50" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WebOpTeacher.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pylib/WebOpTeacher.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="559">
-              <caret line="90" column="21" lean-forward="true" selection-start-line="90" selection-start-column="21" selection-end-line="90" selection-end-column="21" />
-              <folding>
-                <element signature="e#15#45#0" expanded="true" />
-                <element signature="e#438#568#0" expanded="false" />
-                <element signature="e#1546#1711#0" expanded="false" />
-                <element signature="e#1777#2092#0" expanded="false" />
-                <element signature="e#2155#2431#0" expanded="false" />
+                <element signature="e#0#137#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -578,9 +545,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19722815" sideWeight="0.48829952" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19722815" sideWeight="0.48829952" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30326086" sideWeight="0.5021322" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -695,13 +661,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tc/智能批改系统/教师端/d_SU高中英语（模板出卷）/d_提交9张试卷_SU高中英语（模板出卷）/__init__.robot" />
-    <entry file="file://$PROJECT_DIR$/tc/智能批改系统/管理后台/__init__.robot">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1306">
@@ -743,13 +702,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="59" lean-forward="false" selection-start-line="0" selection-start-column="59" selection-end-line="0" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tc/智能批改系统/管理后台/考试列表.robot">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -817,14 +769,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tc/智能批改系统/教师端/d_SU高中英语（自助出卷）/自助出卷.robot">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tc/智能批改系统/邮件发送/请求概况.robot">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
@@ -888,16 +832,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tc/智能批改系统/教师端/d_SU高中英语（出卷服务）/出卷服务.robot">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="19" column="40" lean-forward="false" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
-          <folding>
-            <element signature="e#0#137#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cfg.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
@@ -943,16 +877,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tc/智能批改系统/教师端/d_SU高中英语（模板出卷）/d_查看成绩_SU高中英语（模板出卷）/查看成绩.robot">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="620">
-          <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#181#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pylib/WebOpTeacher.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="559">
@@ -985,6 +909,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/tc/智能批改系统/教师端/d_SU高中英语（模板出卷）/__init__.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="19" column="61" lean-forward="false" selection-start-line="19" selection-start-column="61" selection-end-line="19" selection-end-column="61" />
+          <folding>
+            <element signature="e#18#621#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tc/智能批改系统/教师端/d_SU高中英语（出卷服务）/出卷服务.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="19" column="40" lean-forward="false" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#137#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tc/智能批改系统/教师端/d_SU高中英语（模板出卷）/d_提交9张试卷_SU高中英语（模板出卷）/提交作业.robot">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
@@ -992,6 +936,48 @@
           <folding>
             <element signature="e#0#106#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tc/智能批改系统/教师端/d_SU高中英语（模板出卷）/d_查看成绩_SU高中英语（模板出卷）/查看成绩.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="580">
+          <caret line="29" column="27" lean-forward="false" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#181#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tc/智能批改系统/教师端/d_SU高中英语（模板出卷）/模板出卷.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="12" column="40" lean-forward="true" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tc/智能批改系统/教师端/d_SU高中英语（自助出卷）/自助出卷.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tc/智能批改系统/管理后台/考试列表.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tc/智能批改系统/管理后台/__init__.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1014,24 +1000,10 @@
     <entry file="file://$PROJECT_DIR$/tc/智能批改系统/教师端/__init__.robot">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
-          <caret line="8" column="12" lean-forward="true" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tc/智能批改系统/教师端/d_SU高中英语（模板出卷）/模板出卷.robot">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="12" column="40" lean-forward="true" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tc/智能批改系统/教师端/d_SU高中英语（模板出卷）/__init__.robot">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="18" column="50" lean-forward="false" selection-start-line="18" selection-start-column="50" selection-end-line="18" selection-end-column="50" />
-          <folding />
+          <caret line="8" column="14" lean-forward="true" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#182#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -17,3 +17,4 @@ Suite Teardown  Run Keywords  DeleteExcise   d_SU高中英语（模板出卷）
                 ...  AND  LoginWebSiteAdmin
                 ...  AND  DeleteAdminExcise   d_SU高中英语（模板出卷）
                 ...  AND  DeleteAdminExcise   d_SU高中英语（出卷服务）
+                ...  AND  DeleteAdminExcise   d_SU高中英语（模板出卷）2
