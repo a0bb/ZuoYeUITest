@@ -51,7 +51,7 @@ class Result():
         errornum = self.GetErrorNum()
         accessnum = self.GetAccessNum()
         per = self.GetPer()
-        total = u'请求概况  errornum：%s，accessnum：%s，Percentage：%s' %(errornum,accessnum,per)
+        total = u'请求概况  出错请求数量：%s，总请求数量：%s，出错请求占比：%s' %(errornum,accessnum,per)
         htmltotal = "<br><font size='4' style='font-weight:bold;'>" + total +  "</font>"
         with open('../Statistics.txt','w') as outfile:
             outfile.write(htmltotal.encode('utf8'))
@@ -163,7 +163,7 @@ class Result():
     # 发送邮件
     def send_mail(self,open_file, attfile1, attfile2):
         # 如果是list请以逗号分隔
-        receivers = ['425548772@qq.com', 'wangshihua@hexin.im']
+        receivers = ['425548772@qq.com','wangshihua@hexin.im']
         mail_host = "smtp.163.com"
         sender = "18366105118@163.com"
         mail_pass = "wsh18366105118"
@@ -196,7 +196,7 @@ class Result():
 
         try:
             server = smtplib.SMTP_SSL()
-            server.connect(mail_host, 994)
+            server.connect(mail_host,465)
             server.login(sender, mail_pass)
             server.sendmail(sender, receivers, msg.as_string())
             server.close()

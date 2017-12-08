@@ -12,7 +12,7 @@ import os
 import time
 
 
-class WebOpTeacher(WebOp):
+class WebOpTeacher():
     ROBOT_LIBRARY_SCOPE = 'GLOBAL'
 
     # 用于调试的时候启动浏览器，没其他用处
@@ -73,7 +73,7 @@ class WebOpTeacher(WebOp):
         Toolkit.is_visible('//i[@class="fa fa-pencil"]')  # 确定已经切换到首页了
         self.FindHomeWork(homeWork)    # 先找到这个作业
         tabLinkXpath = u"//span[text()='{}']//../preceding-sibling::span/a[text()='请提交作业']".format(homeWork)
-        homeWorkele = WebOp.shared_wd.find_element_by_xpath(tabLinkXpath)
+        homeWorkele = WebOp.shared_wd.find_elements_by_xpath(tabLinkXpath)[0]
         homeWorkele.click()
 
         WebOp.shared_wd.find_element_by_css_selector('.fa-cloud-upload').click()  # 提交作业
@@ -87,7 +87,7 @@ class WebOpTeacher(WebOp):
         Toolkit.is_visible('//span[@class="ng-scope"]')
         WebOp.shared_wd.find_element_by_xpath('//span[@class="ng-scope"]').click()   # 确认无误，开始上传
         Toolkit.is_visible('//a[@selenium="finish"]')
-        WebOp.shared_wd.find_element_by_xpath('//a[@selenium="finish"]').click()
+        WebOp.shared_wd.find_element_by_xpath('//a[@selenium="finish"]').click()  # 我已传完
         time.sleep(2)
 
     # 在查看成绩中下载各种文件  还需完善
@@ -154,15 +154,37 @@ class WebOpTeacher(WebOp):
         WebOp.shared_wd.find_element_by_xpath(u'//div[text()="导出报告"]').click()  # 导出报告
         #dcbgele.send_keys(Keys.ENTER)
         WebOp.shared_wd.find_element_by_css_selector('div.section-body>button').click()  # 下载生成班级批阅报告
+        Toolkit.is_not_visible('//span[text()="生成报告中"]')  # 确定在“生成报告中”的按钮消失后执行下面步骤
         cmd = ExternalPath + 'downloadfile.exe' + " " + createpath + u'全部批阅报告.pdf'
         pp = subprocess.Popen(cmd.encode('gb2312'))
         pp.wait()
         time.sleep(5)
         WebOp.shared_wd.find_element_by_css_selector('div.pull-right-sm>button').click() # 下载导出统计报告
+        Toolkit.is_not_visible('//span[text()="导出报告中"]')  # 确定在“导出报告中”的按钮消失后执行下面步骤
         cmd = ExternalPath + 'downloadfile.exe' + " " + createpath + u'统计报告.pdf'
         pp = subprocess.Popen(cmd.encode('gb2312'))
         pp.wait()
         time.sleep(5)
+
+    # 获取全年级的平均分、最高分、最低分
+    def GetGradeScore(self,homeWork):
+        self.EnterTab(u'首页')
+        Toolkit.is_visible('//i[@class="fa fa-pencil"]')  # 确定已经切换到首页了
+        self.FindHomeWork(homeWork)  # 先找到这个作业
+        tabLinkXpath = u"//span[text()='{}']//../preceding-sibling::span/a[text()='查看成绩']".format(homeWork)
+        homeWorkele = WebOp.shared_wd.find_elements_by_xpath(tabLinkXpath)[0]
+        homeWorkele.click()
+        # 获取平均分
+        aveScorele = WebOp.shared_wd.find_element_by_css_selector('div.block-success>span:nth-child(2)')
+        aveScore = aveScorele.text
+        # 获取最高分
+        maxScorele = WebOp.shared_wd.find_element_by_css_selector('div.block-success>span:nth-child(6)')
+        maxScore = maxScorele.text
+        # 获取最低分
+        minScorele = WebOp.shared_wd.find_element_by_css_selector('div.block-success>span:nth-child(10)')
+        minScore = minScorele.text
+        return [aveScore,maxScore,minScore]
+
 
 
 
@@ -174,8 +196,8 @@ def test():
     webop.openBrowser()
     wo = WebOpTeacher()
     wo.setupWebTest()
-    wo.LoginWebSiteTeacher('0001yangyang', '0001yangyang')
-
+    wo.LoginWebSiteTeacher('wangshihua1', 'wangshihua1')
+    Toolkit.MyClickElement(u'//span[text()="d_SU高中英语（模板出卷）"]//../preceding-sibling::span/a[text()="查看成绩"]')
     #wo.SubmitHomeWork(u'd_SU高中英语（模板出卷）')
     #wo.Template(u'd_SU高中英语（模板出卷）')
     # wo.Self_help(u"d_SU高中英语（出卷服务）",u" 好好学习，天天向上")
@@ -183,8 +205,9 @@ def test():
     #wo.DeleteExcise(u'测试题干串题')
     #wo.Template(u'd_SU高中英语（模板出卷）')
     #wo.findHomeWork(u'高考模拟测验_自动阅卷')
-    Toolkit.ChangeHandle(u'智能批改')
-    wo.DownloadFile(u'd_SU高中英语（模板出卷）')
+    #Toolkit.ChangeHandle(u'智能批改')
+    #wo.DownloadFile(u'd_SU高中英语（模板出卷）')
+    #print wo.GetGradeScore(u"d_SU高中英语（模板出卷）")
 
 
 

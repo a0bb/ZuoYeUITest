@@ -8,7 +8,7 @@ import time
 from pylib.WebOpTeacher import WebOpTeacher
 
 
-class WebOpAdmin(WebOp):
+class WebOpAdmin():
     ROBOT_LIBRARY_SCOPE = 'GLOBAL'
     # 新开窗口并切换到的后台登陆
     def LoginWebSiteAdmin(self):
@@ -31,7 +31,6 @@ class WebOpAdmin(WebOp):
         WebOp.shared_wd.find_elements_by_xpath(xpath)[0].click()  # 选择考试“d_SU高中英语（模板出卷）”并删除第一个
         Toolkit.Prompt()
 
-    #
 
 
 

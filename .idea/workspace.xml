@@ -1,7 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bee906aa-af61-48f4-8185-d2bbb83791d7" name="Default" comment="" />
+    <list default="true" id="bee906aa-af61-48f4-8185-d2bbb83791d7" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pylib/stime.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tc/智能批改系统/教师端/test.robot" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/download/file/2017-12-04/en-US-7-1.bdic" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/download/file/2017-12-04/各班作答明细（全年级成绩明细）.zip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/download/file/2017-12-04/各班成绩单（全年级成绩单）.zip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/download/file/2017-12-04/年级成绩单.xls" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/download/file/2017-12-04/年级试题分析表.xls" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/download/file/2017-12-04/批阅报告.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/download/file/2017-12-04/班级作答明细.xls" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/download/file/2017-12-04/班级成绩单.xls" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Statistics.txt" afterPath="$PROJECT_DIR$/Statistics.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cfg.py" afterPath="$PROJECT_DIR$/cfg.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log.html" afterPath="$PROJECT_DIR$/log.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/output.xml" afterPath="$PROJECT_DIR$/output.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pylib/222.py" afterPath="$PROJECT_DIR$/pylib/222.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pylib/DealwithExam.py" afterPath="$PROJECT_DIR$/pylib/DealwithExam.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pylib/PrepareExercise.py" afterPath="$PROJECT_DIR$/pylib/PrepareExercise.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pylib/Result.py" afterPath="$PROJECT_DIR$/pylib/Result.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pylib/Toolkit.py" afterPath="$PROJECT_DIR$/pylib/Toolkit.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pylib/WebOp.py" afterPath="$PROJECT_DIR$/pylib/WebOp.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pylib/WebOpAdmin.py" afterPath="$PROJECT_DIR$/pylib/WebOpAdmin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pylib/WebOpTeacher.py" afterPath="$PROJECT_DIR$/pylib/WebOpTeacher.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/report.html" afterPath="$PROJECT_DIR$/report.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tc/智能批改系统/教师端/d_SU高中英语（出卷服务）/出卷服务.robot" afterPath="$PROJECT_DIR$/tc/智能批改系统/教师端/d_SU高中英语（出卷服务）/出卷服务.robot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tc/智能批改系统/教师端/d_SU高中英语（模板出卷）/__init__.robot" afterPath="$PROJECT_DIR$/tc/智能批改系统/教师端/d_SU高中英语（模板出卷）/__init__.robot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tc/智能批改系统/教师端/d_SU高中英语（模板出卷）/d_提交9张试卷_SU高中英语（模板出卷）/提交作业.robot" afterPath="$PROJECT_DIR$/tc/智能批改系统/教师端/d_SU高中英语（模板出卷）/d_提交9张试卷_SU高中英语（模板出卷）/提交作业.robot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tc/智能批改系统/教师端/d_SU高中英语（模板出卷）/d_查看成绩_SU高中英语（模板出卷）/查看成绩.robot" afterPath="$PROJECT_DIR$/tc/智能批改系统/教师端/d_SU高中英语（模板出卷）/d_查看成绩_SU高中英语（模板出卷）/查看成绩.robot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tc/智能批改系统/教师端/d_SU高中英语（模板出卷）/模板出卷.robot" afterPath="$PROJECT_DIR$/tc/智能批改系统/教师端/d_SU高中英语（模板出卷）/模板出卷.robot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tc/智能批改系统/邮件发送/邮件发送.robot" afterPath="$PROJECT_DIR$/tc/智能批改系统/邮件发送/邮件发送.robot" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,59 +44,43 @@
     <SUITE FILE_PATH="coverage/IntelligentCorrection$WebOpTeacher.coverage" NAME="WebOpTeacher Coverage Results" MODIFIED="1512378185658" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pylib" />
     <SUITE FILE_PATH="coverage/Intelligent_correction$test2.coverage" NAME="test2 Coverage Results" MODIFIED="1510988878786" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pylib" />
     <SUITE FILE_PATH="coverage/IntelligentCorrection$WebOp.coverage" NAME="WebOp Coverage Results" MODIFIED="1511403087752" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pylib" />
+    <SUITE FILE_PATH="coverage/ZuoYeUITest$WebOpTeacher.coverage" NAME="WebOpTeacher Coverage Results" MODIFIED="1512724976379" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pylib" />
     <SUITE FILE_PATH="coverage/IntelligentCorrection$result.coverage" NAME="result Coverage Results" MODIFIED="1512439605097" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pylib" />
     <SUITE FILE_PATH="coverage/ZuoYeUITest$test.coverage" NAME="test Coverage Results" MODIFIED="1512615956436" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pylib" />
     <SUITE FILE_PATH="coverage/IntelligentCorrection$test.coverage" NAME="test Coverage Results" MODIFIED="1512468332195" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pylib" />
     <SUITE FILE_PATH="coverage/IntelligentCorrection$Result.coverage" NAME="Result Coverage Results" MODIFIED="1512572093307" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pylib" />
     <SUITE FILE_PATH="coverage/IntelligentCorrection$DealwithExam.coverage" NAME="DealwithExam Coverage Results" MODIFIED="1511789036680" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pylib" />
     <SUITE FILE_PATH="coverage/IntelligentCorrection$PrepareExercise.coverage" NAME="PrepareExercise Coverage Results" MODIFIED="1512380251055" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pylib" />
+    <SUITE FILE_PATH="coverage/ZuoYeUITest$Toolkit.coverage" NAME="Toolkit Coverage Results" MODIFIED="1512724893565" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pylib" />
     <SUITE FILE_PATH="coverage/IntelligentCorrection$WebOpAdmin.coverage" NAME="WebOpAdmin Coverage Results" MODIFIED="1511789080978" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pylib" />
     <SUITE FILE_PATH="coverage/IntelligentCorrection$222.coverage" NAME="222 Coverage Results" MODIFIED="1512466019456" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pylib" />
     <SUITE FILE_PATH="coverage/IntelligentCorrection$RFDebug.coverage" NAME="RFDebug Coverage Results" MODIFIED="1512550712414" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="C:/Python27/Lib/site-packages/robot" />
     <SUITE FILE_PATH="coverage/Intelligent_correction$test.coverage" NAME="test Coverage Results" MODIFIED="1511009386649" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pylib" />
     <SUITE FILE_PATH="coverage/IntelligentCorrection$111.coverage" NAME="111 Coverage Results" MODIFIED="1512471989311" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pylib" />
-    <SUITE FILE_PATH="coverage/ZuoYeUITest$Result.coverage" NAME="Result Coverage Results" MODIFIED="1512617192957" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pylib" />
+    <SUITE FILE_PATH="coverage/ZuoYeUITest$stime.coverage" NAME="stime Coverage Results" MODIFIED="1512663261168" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pylib" />
+    <SUITE FILE_PATH="coverage/ZuoYeUITest$Result.coverage" NAME="Result Coverage Results" MODIFIED="1512699300984" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pylib" />
     <SUITE FILE_PATH="coverage/IntelligentCorrection$Toolkit.coverage" NAME="Toolkit Coverage Results" MODIFIED="1511263829925" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pylib" />
+    <SUITE FILE_PATH="coverage/ZuoYeUITest$222.coverage" NAME="222 Coverage Results" MODIFIED="1512700654703" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pylib" />
   </component>
   <component name="FavoritesManager">
     <favorites_list name="IntelligentCorrection" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="cfg.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cfg.py">
+      <file leaf-file-name="查看成绩.robot" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tc/智能批改系统/教师端/d_SU高中英语（模板出卷）/d_查看成绩_SU高中英语（模板出卷）/查看成绩.robot">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="13" column="53" lean-forward="true" selection-start-line="13" selection-start-column="53" selection-end-line="13" selection-end-column="53" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="请求概况.robot" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tc/智能批改系统/邮件发送/请求概况.robot">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="9" column="10" lean-forward="false" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pylib/test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-343">
-              <caret line="108" column="4" lean-forward="true" selection-start-line="108" selection-start-column="4" selection-end-line="111" selection-end-column="32" />
+            <state relative-caret-position="620">
+              <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
               <folding>
-                <element signature="e#4933#4944#0" expanded="true" />
+                <element signature="e#0#181#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="考试列表.robot" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tc/智能批改系统/管理后台/考试列表.robot">
+      <file leaf-file-name="试卷库出卷.robot" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tc/智能批改系统/教师端/d_SU高中英语（试卷库出卷）/试卷库出卷.robot">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -74,71 +89,92 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Result.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pylib/Result.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="40">
-              <caret line="176" column="64" lean-forward="true" selection-start-line="176" selection-start-column="64" selection-end-line="176" selection-end-column="64" />
-              <folding>
-                <element signature="e#14#29#0" expanded="true" />
-                <element signature="e#254#894#0" expanded="false" />
-                <element signature="e#957#1590#0" expanded="false" />
-                <element signature="e#1642#1798#0" expanded="false" />
-                <element signature="e#1849#2620#0" expanded="false" />
-                <element signature="e#2773#7857#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="222.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pylib/222.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="7" column="9" lean-forward="true" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="111.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pylib/111.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="11" column="19" lean-forward="false" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Statistics.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Statistics.txt">
+      <file leaf-file-name="test.robot" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tc/智能批改系统/教师端/test.robot">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="59" lean-forward="false" selection-start-line="0" selection-start-column="59" selection-end-line="0" selection-end-column="63" />
+              <caret line="0" column="16" lean-forward="true" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WebOpAdmin.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pylib/WebOpAdmin.py">
+      <file leaf-file-name="提交作业.robot" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tc/智能批改系统/教师端/d_SU高中英语（模板出卷）/d_提交9张试卷_SU高中英语（模板出卷）/提交作业.robot">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="33" column="5" lean-forward="false" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="邮件发送.robot" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tc/智能批改系统/邮件发送/邮件发送.robot">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="520">
-              <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+            <state relative-caret-position="220">
+              <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding>
-                <element signature="e#0#82#0" expanded="true" />
+                <element signature="e#0#106#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="__init__.robot" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tc/智能批改系统/教师端/__init__.robot">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="160">
+              <caret line="8" column="12" lean-forward="true" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="__init__.robot" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tc/智能批改系统/__init__.robot">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="80">
+              <caret line="4" column="28" lean-forward="true" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Toolkit.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pylib/Toolkit.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="309">
+              <caret line="116" column="4" lean-forward="false" selection-start-line="116" selection-start-column="4" selection-end-line="116" selection-end-column="4" />
+              <folding>
+                <element signature="e#15#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="__init__.robot" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tc/智能批改系统/教师端/d_SU高中英语（模板出卷）/__init__.robot">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="18" column="50" lean-forward="false" selection-start-line="18" selection-start-column="50" selection-end-line="18" selection-end-column="50" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WebOpTeacher.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pylib/WebOpTeacher.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="559">
+              <caret line="90" column="21" lean-forward="true" selection-start-line="90" selection-start-column="21" selection-end-line="90" selection-end-column="21" />
+              <folding>
+                <element signature="e#15#45#0" expanded="true" />
+                <element signature="e#438#568#0" expanded="false" />
+                <element signature="e#1546#1711#0" expanded="false" />
+                <element signature="e#1777#2092#0" expanded="false" />
+                <element signature="e#2155#2431#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="模板出卷.robot" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tc/智能批改系统/教师端/d_SU高中英语（模板出卷）/模板出卷.robot">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="140">
+              <caret line="12" column="40" lean-forward="true" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -166,6 +202,9 @@
       <find>div[auth=&quot;marking_choice||marking_blanks||blank_score||blank_tag||marking_correction||marking_writing||marking_scores||paper_score||is_super&quot;]</find>
       <find>email</find>
       <find>send</find>
+      <find>get</find>
+      <find>key</find>
+      <find>delete</find>
     </findStrings>
     <replaceStrings>
       <replace>WebOP.</replace>
@@ -176,6 +215,9 @@
     <dirStrings>
       <dir>C:\Git\IntelligentCorrection\tc\智能批改系统\教师端\d_SU高中英语（模板出卷）\d_提交9张试卷_SU高中英语（模板出卷）</dir>
     </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -192,27 +234,30 @@
         <option value="$PROJECT_DIR$/111.py" />
         <option value="$PROJECT_DIR$/tc/智能批改系统/教师端/d_SU高中英语（出卷服务）/__init__.robot" />
         <option value="$PROJECT_DIR$/tc/智能批改系统/教师端/__init__.robot" />
-        <option value="$PROJECT_DIR$/tc/智能批改系统/教师端/d_SU高中英语（出卷服务）/出卷服务.robot" />
-        <option value="$PROJECT_DIR$/pylib/WebOp.py" />
-        <option value="$PROJECT_DIR$/pylib/DealwithExam.py" />
-        <option value="$PROJECT_DIR$/pylib/PrepareExercise.py" />
         <option value="$PROJECT_DIR$/pylib/result.py" />
-        <option value="$PROJECT_DIR$/pylib/222.py" />
         <option value="$PROJECT_DIR$/pylib/111.py" />
         <option value="$PROJECT_DIR$/Statistics.txt" />
         <option value="$PROJECT_DIR$/tc/智能批改系统/邮件发送/请求概况.robot" />
         <option value="$PROJECT_DIR$/tc/智能批改系统/__init__.robot" />
-        <option value="$PROJECT_DIR$/tc/智能批改系统/教师端/d_SU高中英语（模板出卷）/模板出卷.robot" />
-        <option value="$PROJECT_DIR$/tc/智能批改系统/邮件发送/邮件发送.robot" />
-        <option value="$PROJECT_DIR$/pylib/Toolkit.py" />
-        <option value="$PROJECT_DIR$/tc/智能批改系统/教师端/d_SU高中英语（模板出卷）/__init__.robot" />
-        <option value="$PROJECT_DIR$/tc/智能批改系统/教师端/d_SU高中英语（模板出卷）/d_提交9张试卷_SU高中英语（模板出卷）/提交作业.robot" />
-        <option value="$PROJECT_DIR$/tc/智能批改系统/教师端/d_SU高中英语（模板出卷）/d_查看成绩_SU高中英语（模板出卷）/查看成绩.robot" />
-        <option value="$PROJECT_DIR$/pylib/WebOpTeacher.py" />
-        <option value="$PROJECT_DIR$/pylib/WebOpAdmin.py" />
-        <option value="$PROJECT_DIR$/cfg.py" />
         <option value="$PROJECT_DIR$/pylib/test.py" />
+        <option value="$PROJECT_DIR$/tc/智能批改系统/邮件发送/邮件发送.robot" />
+        <option value="$PROJECT_DIR$/pylib/stime.py" />
         <option value="$PROJECT_DIR$/pylib/Result.py" />
+        <option value="$PROJECT_DIR$/pylib/222.py" />
+        <option value="$PROJECT_DIR$/cfg.py" />
+        <option value="$PROJECT_DIR$/pylib/WebOp.py" />
+        <option value="C:/Python27/Lib/site-packages/Selenium2Library/utils/browsercache.py" />
+        <option value="$PROJECT_DIR$/pylib/Toolkit.py" />
+        <option value="$PROJECT_DIR$/tc/智能批改系统/教师端/d_SU高中英语（出卷服务）/出卷服务.robot" />
+        <option value="$PROJECT_DIR$/pylib/PrepareExercise.py" />
+        <option value="$PROJECT_DIR$/pylib/DealwithExam.py" />
+        <option value="$PROJECT_DIR$/tc/智能批改系统/教师端/test.robot" />
+        <option value="$PROJECT_DIR$/tc/智能批改系统/教师端/d_SU高中英语（模板出卷）/d_查看成绩_SU高中英语（模板出卷）/查看成绩.robot" />
+        <option value="$PROJECT_DIR$/pylib/WebOpAdmin.py" />
+        <option value="$PROJECT_DIR$/pylib/WebOpTeacher.py" />
+        <option value="$PROJECT_DIR$/tc/智能批改系统/教师端/d_SU高中英语（模板出卷）/d_提交9张试卷_SU高中英语（模板出卷）/提交作业.robot" />
+        <option value="$PROJECT_DIR$/tc/智能批改系统/教师端/d_SU高中英语（模板出卷）/模板出卷.robot" />
+        <option value="$PROJECT_DIR$/tc/智能批改系统/教师端/d_SU高中英语（模板出卷）/__init__.robot" />
       </list>
     </option>
   </component>
@@ -222,11 +267,10 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="512" />
-    <option name="y" value="25" />
-    <option name="width" value="1281" />
-    <option name="height" value="997" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="346" />
+    <option name="width" value="640" />
+    <option name="height" value="346" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -247,6 +291,7 @@
       </profile-state>
     </entry>
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -276,6 +321,81 @@
               <item name="ZuoYeUITest" type="462c0819:PsiDirectoryNode" />
               <item name="pylib" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="ZuoYeUITest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ZuoYeUITest" type="462c0819:PsiDirectoryNode" />
+              <item name="tc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ZuoYeUITest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ZuoYeUITest" type="462c0819:PsiDirectoryNode" />
+              <item name="tc" type="462c0819:PsiDirectoryNode" />
+              <item name="智能批改系统" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ZuoYeUITest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ZuoYeUITest" type="462c0819:PsiDirectoryNode" />
+              <item name="tc" type="462c0819:PsiDirectoryNode" />
+              <item name="智能批改系统" type="462c0819:PsiDirectoryNode" />
+              <item name="教师端" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ZuoYeUITest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ZuoYeUITest" type="462c0819:PsiDirectoryNode" />
+              <item name="tc" type="462c0819:PsiDirectoryNode" />
+              <item name="智能批改系统" type="462c0819:PsiDirectoryNode" />
+              <item name="教师端" type="462c0819:PsiDirectoryNode" />
+              <item name="d_SU高中英语（出卷服务）" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ZuoYeUITest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ZuoYeUITest" type="462c0819:PsiDirectoryNode" />
+              <item name="tc" type="462c0819:PsiDirectoryNode" />
+              <item name="智能批改系统" type="462c0819:PsiDirectoryNode" />
+              <item name="教师端" type="462c0819:PsiDirectoryNode" />
+              <item name="d_SU高中英语（模板出卷）" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ZuoYeUITest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ZuoYeUITest" type="462c0819:PsiDirectoryNode" />
+              <item name="tc" type="462c0819:PsiDirectoryNode" />
+              <item name="智能批改系统" type="462c0819:PsiDirectoryNode" />
+              <item name="教师端" type="462c0819:PsiDirectoryNode" />
+              <item name="d_SU高中英语（模板出卷）" type="462c0819:PsiDirectoryNode" />
+              <item name="d_提交9张试卷_SU高中英语（模板出卷）" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ZuoYeUITest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ZuoYeUITest" type="462c0819:PsiDirectoryNode" />
+              <item name="tc" type="462c0819:PsiDirectoryNode" />
+              <item name="智能批改系统" type="462c0819:PsiDirectoryNode" />
+              <item name="教师端" type="462c0819:PsiDirectoryNode" />
+              <item name="d_SU高中英语（模板出卷）" type="462c0819:PsiDirectoryNode" />
+              <item name="d_查看成绩_SU高中英语（模板出卷）" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ZuoYeUITest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ZuoYeUITest" type="462c0819:PsiDirectoryNode" />
+              <item name="tc" type="462c0819:PsiDirectoryNode" />
+              <item name="智能批改系统" type="462c0819:PsiDirectoryNode" />
+              <item name="教师端" type="462c0819:PsiDirectoryNode" />
+              <item name="d_SU高中英语（自助出卷）" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ZuoYeUITest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ZuoYeUITest" type="462c0819:PsiDirectoryNode" />
+              <item name="tc" type="462c0819:PsiDirectoryNode" />
+              <item name="智能批改系统" type="462c0819:PsiDirectoryNode" />
+              <item name="教师端" type="462c0819:PsiDirectoryNode" />
+              <item name="d_SU高中英语（试卷库出卷）" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ZuoYeUITest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ZuoYeUITest" type="462c0819:PsiDirectoryNode" />
+              <item name="tc" type="462c0819:PsiDirectoryNode" />
+              <item name="智能批改系统" type="462c0819:PsiDirectoryNode" />
+              <item name="管理后台" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -285,7 +405,7 @@
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="preferences.externalTools" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/sproject/sproject/spj" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -307,25 +427,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Result">
-    <configuration name="111" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pylib" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Intelligent correction" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pylib/111.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
+  <component name="RunManager" selected="Python.WebOpTeacher">
     <configuration name="222" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -380,7 +482,7 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="result" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Toolkit" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -393,12 +495,12 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Intelligent correction" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="C:\Git\IntelligentCorrection\pylib\Result.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pylib/Toolkit.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="WebOpTeacher" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -411,26 +513,44 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Intelligent correction" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pylib/test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pylib/WebOpTeacher.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="stime" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pylib" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Intelligent correction" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pylib/stime.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Python.RFDebug" />
-      <item index="1" class="java.lang.String" itemvalue="Python.test" />
-      <item index="2" class="java.lang.String" itemvalue="Python.result" />
-      <item index="3" class="java.lang.String" itemvalue="Python.Result" />
+      <item index="1" class="java.lang.String" itemvalue="Python.Result" />
+      <item index="2" class="java.lang.String" itemvalue="Python.WebOpTeacher" />
+      <item index="3" class="java.lang.String" itemvalue="Python.stime" />
       <item index="4" class="java.lang.String" itemvalue="Python.222" />
-      <item index="5" class="java.lang.String" itemvalue="Python.111" />
+      <item index="5" class="java.lang.String" itemvalue="Python.Toolkit" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.Result" />
-        <item index="1" class="java.lang.String" itemvalue="Python.test" />
-        <item index="2" class="java.lang.String" itemvalue="Python.111" />
-        <item index="3" class="java.lang.String" itemvalue="Python.222" />
-        <item index="4" class="java.lang.String" itemvalue="Python.result" />
+        <item index="0" class="java.lang.String" itemvalue="Python.WebOpTeacher" />
+        <item index="1" class="java.lang.String" itemvalue="Python.Toolkit" />
+        <item index="2" class="java.lang.String" itemvalue="Python.222" />
+        <item index="3" class="java.lang.String" itemvalue="Python.Result" />
+        <item index="4" class="java.lang.String" itemvalue="Python.stime" />
       </list>
     </recent_temporary>
   </component>
@@ -457,20 +577,20 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19083156" sideWeight="0.48829952" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19722815" sideWeight="0.48829952" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30326086" sideWeight="0.5021322" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30326086" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30250272" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35652173" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23454158" sideWeight="0.51170045" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35652173" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -481,24 +601,24 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30326086" sideWeight="0.5021322" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30326086" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30250272" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23454158" sideWeight="0.4943274" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19722815" sideWeight="0.48829952" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19669509" sideWeight="0.50567263" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23454158" sideWeight="0.51170045" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35652173" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
@@ -510,13 +630,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/pylib/PrepareExercise.py</url>
-          <line>108</line>
-          <option name="timeStamp" value="86" />
-        </line-breakpoint>
-      </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">
@@ -524,48 +637,11 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="96" />
+      <option name="time" value="97" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pylib/test2.py" />
-    <entry file="file://$USER_HOME$/.PyCharm2017.2/system/python_stubs/-762174762/nt.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="245" column="8" lean-forward="true" selection-start-line="245" selection-start-column="8" selection-end-line="245" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tc/d_SU高中英语（自助出卷）.py" />
-    <entry file="file://$PROJECT_DIR$/rflib/rc.robot">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2017.2/system/python_stubs/-762174762/__builtin__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8280">
-          <caret line="414" column="4" lean-forward="false" selection-start-line="414" selection-start-column="4" selection-end-line="414" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Python27/Lib/site-packages/selenium/webdriver/support/event_firing_webdriver.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1520">
-          <caret line="149" column="0" lean-forward="true" selection-start-line="149" selection-start-column="0" selection-end-line="149" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Python27/Lib/json/encoder.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="269" column="0" lean-forward="false" selection-start-line="269" selection-start-column="0" selection-end-line="269" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/answer/answer.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1560">
@@ -618,13 +694,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/log.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-54000">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tc/智能批改系统/教师端/d_SU高中英语（模板出卷）/d_提交9张试卷_SU高中英语（模板出卷）/__init__.robot" />
     <entry file="file://$PROJECT_DIR$/tc/智能批改系统/管理后台/__init__.robot">
       <provider selected="true" editor-type-id="text-editor">
@@ -647,14 +716,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Python27/Lib/smtplib.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="800" column="0" lean-forward="false" selection-start-line="800" selection-start-column="0" selection-end-line="800" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Python27/Lib/site-packages/robotide/lib/robot/libraries/BuiltIn.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="625">
@@ -668,22 +729,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pylib/WebOp.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="8" column="8" lean-forward="false" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tc/智能批改系统/教师端/d_SU高中英语（自助出卷）/自助出卷.robot">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -694,144 +739,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tc/智能批改系统/教师端/d_SU高中英语（出卷服务）/出卷服务.robot">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="8" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pylib/PrepareExercise.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="685">
-          <caret line="76" column="0" lean-forward="true" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
-          <folding>
-            <element signature="e#15#45#0" expanded="true" />
-            <element signature="e#401#2243#0" expanded="false" />
-            <element signature="e#5847#6711#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tc/智能批改系统/教师端/d_SU高中英语（试卷库出卷）/试卷库出卷.robot">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tc/智能批改系统/教师端/d_SU高中英语（模板出卷）/模板出卷.robot">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tc/智能批改系统/__init__.robot">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pylib/DealwithExam.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="14" column="8" lean-forward="false" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tc/智能批改系统/教师端/d_SU高中英语（模板出卷）/__init__.robot">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="17" column="17" lean-forward="true" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tc/智能批改系统/教师端/d_SU高中英语（模板出卷）/d_查看成绩_SU高中英语（模板出卷）/查看成绩.robot">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="24" column="11" lean-forward="true" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pylib/Toolkit.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="557">
-          <caret line="109" column="24" lean-forward="false" selection-start-line="109" selection-start-column="24" selection-end-line="109" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tc/智能批改系统/教师端/d_SU高中英语（模板出卷）/d_提交9张试卷_SU高中英语（模板出卷）/提交作业.robot">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="6" column="12" lean-forward="false" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tc/智能批改系统/教师端/__init__.robot">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pylib/WebOpTeacher.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" column="43" lean-forward="false" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
-          <folding>
-            <element signature="e#443#573#0" expanded="false" />
-            <element signature="e#648#1503#0" expanded="false" />
-            <element signature="e#1551#1716#0" expanded="false" />
-            <element signature="e#1782#2097#0" expanded="false" />
-            <element signature="e#2490#3654#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tc/智能批改系统/邮件发送/请求概况.robot">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="9" column="10" lean-forward="false" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tc/智能批改系统/邮件发送/邮件发送.robot">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#82#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cfg.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="13" column="53" lean-forward="true" selection-start-line="13" selection-start-column="53" selection-end-line="13" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pylib/WebOpAdmin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="33" column="5" lean-forward="false" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Statistics.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="59" lean-forward="false" selection-start-line="0" selection-start-column="59" selection-end-line="0" selection-end-column="63" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -839,48 +750,288 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pylib/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-343">
-          <caret line="108" column="4" lean-forward="true" selection-start-line="108" selection-start-column="4" selection-end-line="111" selection-end-column="32" />
-          <folding>
-            <element signature="e#4933#4944#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="1177">
+          <caret line="110" column="37" lean-forward="true" selection-start-line="110" selection-start-column="37" selection-end-line="110" selection-end-column="37" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pylib/111.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" column="19" lean-forward="false" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+        <state relative-caret-position="240">
+          <caret line="12" column="32" lean-forward="true" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pylib/222.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="7" column="9" lean-forward="true" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+        <state relative-caret-position="120">
+          <caret line="9" column="51" lean-forward="true" selection-start-line="9" selection-start-column="51" selection-end-line="9" selection-end-column="51" />
+          <folding>
+            <element signature="e#16#30#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/smtplib.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9745">
+          <caret line="750" column="0" lean-forward="false" selection-start-line="750" selection-start-column="0" selection-end-line="750" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pylib/stime.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="26" column="48" lean-forward="true" selection-start-line="26" selection-start-column="48" selection-end-line="26" selection-end-column="48" />
+          <folding>
+            <element signature="e#15#26#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pylib/Result.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="176" column="64" lean-forward="true" selection-start-line="176" selection-start-column="64" selection-end-line="176" selection-end-column="64" />
+        <state relative-caret-position="77">
+          <caret line="183" column="0" lean-forward="true" selection-start-line="183" selection-start-column="0" selection-end-line="183" selection-end-column="0" />
           <folding>
-            <element signature="e#14#29#0" expanded="true" />
             <element signature="e#254#894#0" expanded="false" />
             <element signature="e#957#1590#0" expanded="false" />
             <element signature="e#1642#1798#0" expanded="false" />
-            <element signature="e#1849#2620#0" expanded="false" />
-            <element signature="e#2773#7857#0" expanded="false" />
+            <element signature="e#2763#7847#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tc/智能批改系统/教师端/d_SU高中英语（自助出卷）/自助出卷.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tc/智能批改系统/邮件发送/请求概况.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="8" column="30" lean-forward="false" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tc/智能批改系统/邮件发送/邮件发送.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/Selenium2Library/keywords/_screenshot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-480">
+          <caret line="7" column="6" lean-forward="false" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/robotide/lib/robot/libraries/Collections.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="879" column="0" lean-forward="true" selection-start-line="879" selection-start-column="0" selection-end-line="879" selection-end-column="0" />
+          <folding>
+            <element signature="e#947#16810#0" expanded="false" />
+            <element signature="e#16845#27371#0" expanded="false" />
+            <element signature="e#27417#36687#0" expanded="false" />
+            <element signature="e#36760#36961#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/Selenium2Library/utils/browsercache.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="14" column="41" lean-forward="true" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/Selenium2Library/utils/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="22" column="17" lean-forward="true" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/Selenium2Library/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="3" column="8" lean-forward="false" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tc/智能批改系统/教师端/d_SU高中英语（出卷服务）/出卷服务.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="19" column="40" lean-forward="false" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#137#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cfg.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="14" column="44" lean-forward="false" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pylib/DealwithExam.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="16" column="16" lean-forward="true" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+          <folding>
+            <element signature="e#15#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pylib/WebOp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="14" column="34" lean-forward="false" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pylib/WebOpAdmin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="31" column="24" lean-forward="true" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pylib/PrepareExercise.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="140" column="51" lean-forward="false" selection-start-line="140" selection-start-column="51" selection-end-line="140" selection-end-column="51" />
+          <folding>
+            <element signature="e#15#45#0" expanded="true" />
+            <element signature="e#396#2238#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tc/智能批改系统/教师端/d_SU高中英语（模板出卷）/d_查看成绩_SU高中英语（模板出卷）/查看成绩.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="620">
+          <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#181#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pylib/WebOpTeacher.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="559">
+          <caret line="90" column="21" lean-forward="true" selection-start-line="90" selection-start-column="21" selection-end-line="90" selection-end-column="21" />
+          <folding>
+            <element signature="e#15#45#0" expanded="true" />
+            <element signature="e#438#568#0" expanded="false" />
+            <element signature="e#1546#1711#0" expanded="false" />
+            <element signature="e#1777#2092#0" expanded="false" />
+            <element signature="e#2155#2431#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tc/智能批改系统/__init__.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="28" lean-forward="true" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pylib/Toolkit.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="116" column="4" lean-forward="false" selection-start-line="116" selection-start-column="4" selection-end-line="116" selection-end-column="4" />
+          <folding>
+            <element signature="e#15#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tc/智能批改系统/教师端/d_SU高中英语（模板出卷）/d_提交9张试卷_SU高中英语（模板出卷）/提交作业.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#106#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tc/智能批改系统/教师端/test.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="16" lean-forward="true" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tc/智能批改系统/教师端/d_SU高中英语（试卷库出卷）/试卷库出卷.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tc/智能批改系统/教师端/__init__.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" column="12" lean-forward="true" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tc/智能批改系统/教师端/d_SU高中英语（模板出卷）/模板出卷.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="12" column="40" lean-forward="true" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tc/智能批改系统/教师端/d_SU高中英语（模板出卷）/__init__.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="18" column="50" lean-forward="false" selection-start-line="18" selection-start-column="50" selection-end-line="18" selection-end-column="50" />
+          <folding />
         </state>
       </provider>
     </entry>

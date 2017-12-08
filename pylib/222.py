@@ -3,28 +3,53 @@ import smtplib
 from email.mime.text import MIMEText
 from bs4 import BeautifulSoup
 
-soup = BeautifulSoup(open('C://Git//IntelligentCorrection//report.html','rb+'),"html5lib")
-div = soup.find_all('div')[1]
-print div
+#! /usr/bin/env python
+# -*- coding: UTF-8 -*-
+import smtplib
+from email.mime.text import MIMEText
+mailto_list=['425548772@qq.com']           #收件人(列表)
+mail_host="smtp.163.com"            #使用的邮箱的smtp服务器地址，这里是163的smtp地址
+mail_user="18366105118@163.com"                           #用户名
+mail_pass="sigmalove2017"                             #密码
+mail_postfix="163.com"                     #邮箱的后缀，网易就是163.com
+def send_mail(to_list,sub,content):
+    me="hello"+"<"+mail_user+"@"+mail_postfix+">"
+    msg = MIMEText(content,_subtype='plain')
+    msg['Subject'] = sub
+    msg['From'] = me
+    msg['To'] = ";".join(to_list)                #将收件人列表以‘；’分隔
+    try:
+        server = smtplib.SMTP()
+        server.connect(mail_host)                            #连接服务器
+        server.login(mail_user,mail_pass)               #登录操作
+        server.sendmail(me, to_list, msg.as_string())
+        server.close()
+        return True
+    except Exception, e:
+        print str(e)
+        return False
+for i in range(1):                             #发送1封，上面的列表是几个人，这个就填几
+    if send_mail(mailto_list,"电话","电话是XXX"):  #邮件主题和邮件内容
+        #这是最好写点中文，如果随便写，可能会被网易当做垃圾邮件退信
+        print "done!"
+    else:
+        print "failed!"
 
+    import time
+    import os
+    import sched
+    import sys
+    import datetime
 
+    # 初始化sched模块的scheduler类
+    # 第一个参数是一个可以返回时间戳的函数，第二个参数可以在定时未到达之前阻塞。
+    schedule = sched.scheduler(time.time, time.sleep)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    sys.path.append(sys.prefix + "\\Lib\\MyWheels")
+    reload(sys)
+    sys.setdefaultencoding('utf8')
+    start_time = 0
+    end_time = 0
 
 
 

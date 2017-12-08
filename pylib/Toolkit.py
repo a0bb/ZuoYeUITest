@@ -6,6 +6,7 @@ from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.common.by import By
 import selenium.webdriver.support.expected_conditions as EC
 import selenium.webdriver.support.ui as ui
+from selenium.webdriver.common.keys import Keys
 from selenium import webdriver
 
 
@@ -113,14 +114,20 @@ def ChangeHandle(title):
             break
 
 # 获取element的Text，参数为想要获取的text的element的xpath值
-def GetText(xpath):
+def MyGetText(xpath):
     element = WebOp.shared_wd.find_elements_by_xpath(xpath)[0]
     return element.text
-
-
+# 对某个元素进行点击 使用xpath定位
+def MyClickElement(locator):
+    try:
+        WebOp.shared_wd.find_elements_by_xpath(locator)[0].click()
+    except:
+        element = WebOp.shared_wd.find_elements_by_xpath(locator)[0]
+        element.send_keys(Keys.ENTER)
 
 
 #  测试
+
 def test():
     # num = GetAnswer('..\\data\\answer\\answer.txt', 7)
     # print type(num[5])

@@ -11,7 +11,7 @@ import os
 import time
 
 
-class PrepareExercise(WebOp):
+class PrepareExercise():
     ROBOT_LIBRARY_SCOPE = 'GLOBAL'
     # 布置新作业--出卷服务
     def VolumeServer(self, exerciseName, leaveMassage):
@@ -67,8 +67,7 @@ class PrepareExercise(WebOp):
         WebOp.shared_wd.find_element_by_class_name('ui-select-match-text').click()
         WebOp.shared_wd.find_elements_by_class_name('ui-select-choices-row-inner')[2].click()  # 选高中英语
         time.sleep(1)
-        WebOp.shared_wd.find_element_by_css_selector(
-            'div[selenium-value="00000011"]').click()  # 选择模板！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！
+        WebOp.shared_wd.find_element_by_css_selector('div[selenium-value="00000011"]').click()  # 选择模板！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！
         WebOp.shared_wd.find_element_by_css_selector('button[selenium="submit"]').click()  # 开始布置
 
         exerciseNameele = WebOp.shared_wd.find_element_by_id('name')

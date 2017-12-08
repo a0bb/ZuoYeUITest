@@ -1,1 +1,1 @@
-<br><font size='4' style='font-weight:bold;'>请求概况  errornum：191，accessnum：315370，Percentage：0.060559%</font>
+<br><font size='4' style='font-weight:bold;'>请求概况  出错请求数量：404，总请求数量：339614，出错请求占比：0.118950%</font>
