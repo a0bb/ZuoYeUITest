@@ -35,21 +35,7 @@ for i in range(1):                             #发送1封，上面的列表是�
     else:
         print "failed!"
 
-    import time
-    import os
-    import sched
-    import sys
-    import datetime
 
-    # 初始化sched模块的scheduler类
-    # 第一个参数是一个可以返回时间戳的函数，第二个参数可以在定时未到达之前阻塞。
-    schedule = sched.scheduler(time.time, time.sleep)
-
-    sys.path.append(sys.prefix + "\\Lib\\MyWheels")
-    reload(sys)
-    sys.setdefaultencoding('utf8')
-    start_time = 0
-    end_time = 0
 
 
 

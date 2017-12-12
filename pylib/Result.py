@@ -208,11 +208,11 @@ class Result():
 # **************调试部分*******************
 def test():
     res = Result()
-    if res.send_mail(r'C:/Git/ZuoYeUITest/reportlog.html', r'C:/Git/ZuoYeUITest/report.html', r'C:/Git/ZuoYeUITest/log.html'):
-        print u"发送成功"
-    else:
-        print u"发送失败"
-    # res.OutTxt()
+    # if res.send_mail(r'C:/Git/ZuoYeUITest/reportlog.html', r'C:/Git/ZuoYeUITest/report.html', r'C:/Git/ZuoYeUITest/log.html'):
+    #     print u"发送成功"
+    # else:
+    #     print u"发送失败"
+    res.OutTxt()
 
 
 
