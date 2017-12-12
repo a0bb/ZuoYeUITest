@@ -24,3 +24,7 @@ filePath = u'C:\\Git\\ZuoYeUITest\\data\\exercisefile\\出卷服务文档.jpg'  
 picturePath = 'C:\\Git\\ZuoYeUITest\\data\\englishpicture'  # 提交作业的图片路径
 downFilePath = 'C:\\Git\\ZuoYeUITest\\download\\file\\'
 
+# 每天后端微信群反馈问题对应考试数量：errorExam  ；stable中每天一共的考试数:totalExam
+errorExam = 4
+totalExam = 19
+

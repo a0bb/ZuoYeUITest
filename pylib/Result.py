@@ -1,6 +1,7 @@
 # coding:utf8
 import paramiko
 import time
+import cfg
 import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
@@ -39,20 +40,22 @@ class Result():
         except:
             return stderr.read()
 
-    # 获取 error/access 百分比
-    def GetPer(self):
-        errorNum = float(self.GetErrorNum())
-        accessNum = float(self.GetAccessNum())
-        per = errorNum / accessNum
-        return "%.6f%%" % (per * 100)
+    # 获取 error/access 百分比(重复访问造成性能降低)
+    # def GetPer(self):
+    #     errorNum = float(self.GetErrorNum())
+    #     accessNum = float(self.GetAccessNum())
+    #     per = errorNum / accessNum
+    #     return "%.6f%%" % (per * 100)
 
     # 生成文件并放到linux
     def OutTxt(self):
         errornum = self.GetErrorNum()
         accessnum = self.GetAccessNum()
-        per = self.GetPer()
+        per = "%.6f%%" % ((float(errornum)/float(accessnum)) * 100)
+        perExam = "%.2f%%" % ((float(cfg.errorExam)/float(cfg.totalExam)) * 100)
         total = u'请求概况  出错请求数量：%s，总请求数量：%s，出错请求占比：%s' %(errornum,accessnum,per)
-        htmltotal = "<br><font size='4' style='font-weight:bold;'>" + total +  "</font>"
+        totalExam = u'后端群反馈问题概况  反馈问题对应考试数量：%s，发布的考试的数量：%s，有问题考试占比：%s' %(cfg.errorExam,cfg.totalExam,perExam)
+        htmltotal = "<br><font size='4' style='font-weight:bold;'>" + total +  "</font>" + "<br><font size='4' style='font-weight:bold;'>" + totalExam +  "</font>"
         with open('../Statistics.txt','w') as outfile:
             outfile.write(htmltotal.encode('utf8'))
         ssh = paramiko.SSHClient()
