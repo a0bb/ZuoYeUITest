@@ -1,108 +1,134 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20171208 18:24:34.843" generator="Robot 3.0.2 (Python 2.7.13 on win32)">
+<robot generated="20171221 13:19:10.583" generator="Robot 3.0.2 (Python 2.7.13 on win32)">
 <suite source="C:\Git\ZuoYeUITest\tc" id="s1" name="Tc">
 <suite source="C:\Git\ZuoYeUITest\tc\智能批改系统" id="s1-s1" name="智能批改系统">
 <kw type="setup" name="Open Browser" library="pylib.WebOp">
-<status status="PASS" endtime="20171208 18:24:38.840" starttime="20171208 18:24:35.363"></status>
+<status status="PASS" endtime="20171221 13:19:14.203" starttime="20171221 13:19:10.725"></status>
 </kw>
 <suite source="C:\Git\ZuoYeUITest\tc\智能批改系统\教师端" id="s1-s1-s1" name="教师端">
-<kw type="setup" name="Login Web Site Teacher" library="pylib.WebOpTeacher">
+<kw type="setup" name="Run Keywords" library="BuiltIn">
+<doc>Executes all the given keywords in a sequence.</doc>
+<arguments>
+<arg>LoginWebSiteTeacher</arg>
+<arg>&amp;{TeacherUser}[name]</arg>
+<arg>&amp;{TeacherUser}[pw]</arg>
+<arg>AND</arg>
+<arg>LoginWebSiteAdmin</arg>
+<arg>AND</arg>
+<arg>ChangeHandle</arg>
+<arg>智能批改</arg>
+</arguments>
+<kw name="Login Web Site Teacher" library="pylib.WebOpTeacher">
 <arguments>
 <arg>&amp;{TeacherUser}[name]</arg>
 <arg>&amp;{TeacherUser}[pw]</arg>
 </arguments>
-<status status="PASS" endtime="20171208 18:24:53.635" starttime="20171208 18:24:38.873"></status>
+<status status="PASS" endtime="20171221 13:19:28.390" starttime="20171221 13:19:14.225"></status>
 </kw>
-<suite source="C:\Git\ZuoYeUITest\tc\智能批改系统\教师端\d_SU高中英语（模板出卷）" id="s1-s1-s1-s1" name="d SU高中英语（模板出卷）">
-<suite source="C:\Git\ZuoYeUITest\tc\智能批改系统\教师端\d_SU高中英语（模板出卷）\d_查看成绩_SU高中英语（模板出卷）" id="s1-s1-s1-s1-s1" name="d 查看成绩 SU高中英语（模板出卷）">
-<suite source="C:\Git\ZuoYeUITest\tc\智能批改系统\教师端\d_SU高中英语（模板出卷）\d_查看成绩_SU高中英语（模板出卷）\查看成绩.robot" id="s1-s1-s1-s1-s1-s1" name="查看成绩">
-<test id="s1-s1-s1-s1-s1-s1-t1" name="流程-后台发布成绩--0002">
 <kw name="Login Web Site Admin" library="pylib.WebOpAdmin">
-<status status="PASS" endtime="20171208 18:25:12.455" starttime="20171208 18:24:53.685"></status>
+<status status="PASS" endtime="20171221 13:19:47.616" starttime="20171221 13:19:28.391"></status>
 </kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
+<kw name="Change Handle" library="pylib.Toolkit">
 <arguments>
-<arg>10</arg>
+<arg>智能批改</arg>
 </arguments>
-<msg timestamp="20171208 18:25:22.460" level="INFO">Slept 10 seconds</msg>
-<status status="PASS" endtime="20171208 18:25:22.460" starttime="20171208 18:25:12.458"></status>
+<status status="PASS" endtime="20171221 13:19:47.641" starttime="20171221 13:19:47.616"></status>
 </kw>
-<kw name="Choose Test" library="pylib.DealwithExam">
+<status status="PASS" endtime="20171221 13:19:47.641" starttime="20171221 13:19:14.225"></status>
+</kw>
+<suite source="C:\Git\ZuoYeUITest\tc\智能批改系统\教师端\d_SU高中英语（出卷服务）" id="s1-s1-s1-s1" name="d SU高中英语（出卷服务）">
+<suite source="C:\Git\ZuoYeUITest\tc\智能批改系统\教师端\d_SU高中英语（出卷服务）\出卷服务.robot" id="s1-s1-s1-s1-s1" name="出卷服务">
+<test id="s1-s1-s1-s1-s1-t1" name="流程-取消出卷 - tc1002">
+<kw name="Volume Server" library="pylib.PrepareExercise.PrepareExercise">
 <arguments>
-<arg>d_SU高中英语（模板出卷）</arg>
+<arg>d_SU高中英语（出卷服务）</arg>
+<arg>好好学习，天天向上</arg>
 </arguments>
-<status status="PASS" endtime="20171208 18:25:25.205" starttime="20171208 18:25:22.460"></status>
+<status status="PASS" endtime="20171221 13:19:54.972" starttime="20171221 13:19:47.677"></status>
 </kw>
-<kw name="Tu Pian Yu Chu Li" library="pylib.DealwithExam">
-<status status="PASS" endtime="20171208 18:25:26.247" starttime="20171208 18:25:25.210"></status>
-</kw>
-<kw name="Tu Pian Yu Xue Sheng" library="pylib.DealwithExam">
-<status status="PASS" endtime="20171208 18:25:27.248" starttime="20171208 18:25:26.248"></status>
-</kw>
-<kw name="Tu Pian Yu Cheng Ji" library="pylib.DealwithExam">
-<status status="PASS" endtime="20171208 18:25:38.549" starttime="20171208 18:25:27.249"></status>
-</kw>
-<kw name="Xue Sheng Cheng Ji" library="pylib.DealwithExam">
-<status status="PASS" endtime="20171208 18:25:38.996" starttime="20171208 18:25:38.556"></status>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
+<kw name="Cancel Server" library="pylib.PrepareExercise.PrepareExercise">
 <arguments>
-<arg>1</arg>
+<arg>d_SU高中英语（出卷服务）</arg>
 </arguments>
-<msg timestamp="20171208 18:25:40.006" level="INFO">Slept 1 second</msg>
-<status status="PASS" endtime="20171208 18:25:40.006" starttime="20171208 18:25:39.005"></status>
+<status status="PASS" endtime="20171221 13:19:56.038" starttime="20171221 13:19:54.972"></status>
 </kw>
 <kw name="My Get Text" library="pylib.Toolkit">
 <arguments>
-<arg>//div[@class="toast-inner"]</arg>
+<arg>//a[text()="回到首页"]</arg>
 </arguments>
 <assign>
-<var>${compare}</var>
+<var>${tohomepage}</var>
 </assign>
-<msg timestamp="20171208 18:25:40.052" level="INFO">${compare} = 错误信息：图片与非选择题的删除\页码\学生数据:不一致</msg>
-<status status="PASS" endtime="20171208 18:25:40.052" starttime="20171208 18:25:40.006"></status>
+<msg timestamp="20171221 13:19:56.200" level="INFO">${tohomepage} = 回到首页</msg>
+<status status="PASS" endtime="20171221 13:19:56.200" starttime="20171221 13:19:56.038"></status>
 </kw>
 <kw name="Should Be True" library="BuiltIn">
 <doc>Fails if the given condition is not true.</doc>
 <arguments>
-<arg>${compare} == '发布成功'</arg>
+<arg>u"${tohomepage}" == u"回到首页"</arg>
 </arguments>
-<msg timestamp="20171208 18:25:40.054" level="FAIL">Evaluating expression '错误信息：图片与非选择题的删除\页码\学生数据:不一致 == '发布成功'' failed: SyntaxError: invalid syntax (&lt;string&gt;, line 1)</msg>
-<status status="FAIL" endtime="20171208 18:25:40.054" starttime="20171208 18:25:40.054"></status>
+<status status="PASS" endtime="20171221 13:19:56.202" starttime="20171221 13:19:56.201"></status>
 </kw>
-<status status="FAIL" endtime="20171208 18:25:40.055" critical="yes" starttime="20171208 18:24:53.683">Evaluating expression '错误信息：图片与非选择题的删除\页码\学生数据:不一致 == '发布成功'' failed: SyntaxError: invalid syntax (&lt;string&gt;, line 1)</status>
+<kw type="teardown" name="Run Keywords" library="BuiltIn">
+<doc>Executes all the given keywords in a sequence.</doc>
+<arguments>
+<arg>ChangeHandle</arg>
+<arg>管理后台</arg>
+<arg>AND</arg>
+<arg>DeleteAdminExcise</arg>
+<arg>d_SU高中英语（出卷服务）</arg>
+<arg>AND</arg>
+<arg>ChangeHandle</arg>
+<arg>智能批改</arg>
+</arguments>
+<kw name="Change Handle" library="pylib.Toolkit">
+<arguments>
+<arg>管理后台</arg>
+</arguments>
+<status status="PASS" endtime="20171221 13:19:56.264" starttime="20171221 13:19:56.206"></status>
+</kw>
+<kw name="Delete Admin Excise" library="pylib.WebOpAdmin">
+<arguments>
+<arg>d_SU高中英语（出卷服务）</arg>
+</arguments>
+<status status="PASS" endtime="20171221 13:19:57.529" starttime="20171221 13:19:56.265"></status>
+</kw>
+<kw name="Change Handle" library="pylib.Toolkit">
+<arguments>
+<arg>智能批改</arg>
+</arguments>
+<status status="PASS" endtime="20171221 13:19:57.647" starttime="20171221 13:19:57.530"></status>
+</kw>
+<status status="PASS" endtime="20171221 13:19:57.647" starttime="20171221 13:19:56.203"></status>
+</kw>
+<status status="PASS" endtime="20171221 13:19:57.647" critical="yes" starttime="20171221 13:19:47.676"></status>
 </test>
-<status status="FAIL" endtime="20171208 18:25:40.058" starttime="20171208 18:24:53.662"></status>
+<status status="PASS" endtime="20171221 13:19:57.648" starttime="20171221 13:19:47.648"></status>
 </suite>
-<status status="FAIL" endtime="20171208 18:25:40.069" starttime="20171208 18:24:53.655"></status>
+<status status="PASS" endtime="20171221 13:19:57.651" starttime="20171221 13:19:47.642"></status>
 </suite>
-<status status="FAIL" endtime="20171208 18:25:40.078" starttime="20171208 18:24:53.635"></status>
-</suite>
-<status status="FAIL" endtime="20171208 18:25:40.084" starttime="20171208 18:24:38.840"></status>
+<status status="PASS" endtime="20171221 13:19:57.655" starttime="20171221 13:19:14.203"></status>
 </suite>
 <kw type="teardown" name="Close Browser" library="pylib.WebOp">
-<status status="PASS" endtime="20171208 18:25:43.263" starttime="20171208 18:25:40.088"></status>
+<status status="PASS" endtime="20171221 13:20:00.869" starttime="20171221 13:19:57.657"></status>
 </kw>
-<status status="FAIL" endtime="20171208 18:25:43.263" starttime="20171208 18:24:34.902"></status>
+<status status="PASS" endtime="20171221 13:20:00.870" starttime="20171221 13:19:10.637"></status>
 </suite>
-<status status="FAIL" endtime="20171208 18:25:43.287" starttime="20171208 18:24:34.848"></status>
+<status status="PASS" endtime="20171221 13:20:00.878" starttime="20171221 13:19:10.586"></status>
 </suite>
 <statistics>
 <total>
-<stat fail="1" pass="0">Critical Tests</stat>
-<stat fail="1" pass="0">All Tests</stat>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat fail="1" id="s1" name="Tc" pass="0">Tc</stat>
-<stat fail="1" id="s1-s1" name="智能批改系统" pass="0">Tc.智能批改系统</stat>
-<stat fail="1" id="s1-s1-s1" name="教师端" pass="0">Tc.智能批改系统.教师端</stat>
-<stat fail="1" id="s1-s1-s1-s1" name="d SU高中英语（模板出卷）" pass="0">Tc.智能批改系统.教师端.d SU高中英语（模板出卷）</stat>
-<stat fail="1" id="s1-s1-s1-s1-s1" name="d 查看成绩 SU高中英语（模板出卷）" pass="0">Tc.智能批改系统.教师端.d SU高中英语（模板出卷）.d 查看成绩 SU高中英语（模板出卷）</stat>
-<stat fail="1" id="s1-s1-s1-s1-s1-s1" name="查看成绩" pass="0">Tc.智能批改系统.教师端.d SU高中英语（模板出卷）.d 查看成绩 SU高中英语（模板出卷）.查看成绩</stat>
+<stat fail="0" id="s1" name="Tc" pass="1">Tc</stat>
+<stat fail="0" id="s1-s1" name="智能批改系统" pass="1">Tc.智能批改系统</stat>
+<stat fail="0" id="s1-s1-s1" name="教师端" pass="1">Tc.智能批改系统.教师端</stat>
+<stat fail="0" id="s1-s1-s1-s1" name="d SU高中英语（出卷服务）" pass="1">Tc.智能批改系统.教师端.d SU高中英语（出卷服务）</stat>
+<stat fail="0" id="s1-s1-s1-s1-s1" name="出卷服务" pass="1">Tc.智能批改系统.教师端.d SU高中英语（出卷服务）.出卷服务</stat>
 </suite>
 </statistics>
 <errors>

@@ -109,7 +109,6 @@ def ChangeHandle(title):
     handles = WebOp.shared_wd.window_handles
     for handle in handles:
         WebOp.shared_wd.switch_to_window(handle)
-        WebOp.shared_wd.refresh()
         if title in WebOp.shared_wd.title:
             break
 

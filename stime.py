@@ -46,4 +46,4 @@ class mytimer(object):
 
 if __name__ == '__main__':
     mytimer = mytimer()
-    mytimer.cmd_timer("netstat -an", '0:15', 86400)
+    mytimer.cmd_timer("robot --pythonpath C:\\Git\\ZuoYeUITest --test *0001 C:\\Git\\ZuoYeUITest\\tc", '23:00', 86400)

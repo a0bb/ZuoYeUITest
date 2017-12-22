@@ -8,6 +8,7 @@ from email.mime.multipart import MIMEMultipart
 from email.header import Header
 
 class Result():
+    ROBOT_LIBRARY_SCOPE = 'GLOBAL'
     # 获取 error.log的当前这一天日志数量
     def GetErrorNum(self):
         try:
@@ -55,14 +56,16 @@ class Result():
         perExam = "%.2f%%" % ((float(cfg.errorExam)/float(cfg.totalExam)) * 100)
         total = u'请求概况  出错请求数量：%s，总请求数量：%s，出错请求占比：%s' %(errornum,accessnum,per)
         totalExam = u'后端群反馈问题概况  反馈问题对应考试数量：%s，发布的考试的数量：%s，有问题考试占比：%s' %(cfg.errorExam,cfg.totalExam,perExam)
+        if int(cfg.errorExam) == 0:
+            totalExam = u'今天没有反馈问题，棒棒的！'
         htmltotal = "<br><font size='4' style='font-weight:bold;'>" + total +  "</font>" + "<br><font size='4' style='font-weight:bold;'>" + totalExam +  "</font>"
-        with open('../Statistics.txt','w') as outfile:
+        with open('./Statistics.txt','w') as outfile:
             outfile.write(htmltotal.encode('utf8'))
         ssh = paramiko.SSHClient()
         ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
         ssh.connect('106.14.161.218', '22', 'root', 'sigmaLOVE2017')
         sftp = ssh.open_sftp()
-        sftp.put('../Statistics.txt','/mnt/logs/Statistics.txt')
+        sftp.put('./Statistics.txt','/mnt/logs/Statistics.txt')
         shell = 'scp /mnt/logs/Statistics.txt root@192.168.0.5:/usr/local/hexin/qareport'
         ssh.exec_command(shell)
 
@@ -169,7 +172,7 @@ class Result():
         receivers = ['425548772@qq.com','wangshihua@hexin.im']
         mail_host = "smtp.163.com"
         sender = "18366105118@163.com"
-        mail_pass = "wsh18366105118"
+        mail_pass = "sigmalove2017"
 
         today = time.strftime('%Y-%m-%d', time.localtime(time.time()))
         detailTime = time.strftime('%H:%M:%S', time.localtime(time.time()))
@@ -207,6 +210,8 @@ class Result():
         except Exception, e:
             print str(e)
             return False
+
+
 
 # **************调试部分*******************
 def test():

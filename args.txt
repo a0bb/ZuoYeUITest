@@ -1,0 +1,10 @@
+--test *tc2001
+--test *result001
+--test *result002
+--test *tc1003
+--test *tc1006
+--test *tc1007
+--test *tc1004
+--test *tc1005
+--pythonpath C:\Git\ZuoYeUITest\
+C:\Git\ZuoYeUITest\tc

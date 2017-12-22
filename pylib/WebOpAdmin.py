@@ -27,9 +27,12 @@ class WebOpAdmin():
     # 删除后台考试列表中的考试
     def DeleteAdminExcise(self,exciseName):
         WebOp.shared_wd.find_element_by_css_selector(u'span[title="考试列表"]').click()  # 选择考试列表
+        Toolkit.is_visible('//span[text()="考试名称"]')
+        WebOp.shared_wd.find_elements_by_css_selector('table.channel-table td')[0].click()  # 点击全部
         xpath = u'//a[text()="{}"]//..//following-sibling::td//a//span[text()="删除"]'.format(exciseName)
-        WebOp.shared_wd.find_elements_by_xpath(xpath)[0].click()  # 选择考试“d_SU高中英语（模板出卷）”并删除第一个
-        Toolkit.Prompt()
+        if Toolkit.IsElementPresentxpath(xpath):
+            WebOp.shared_wd.find_elements_by_xpath(xpath)[0].click()  # 选择考试“d_SU高中英语（模板出卷）”并删除第一个
+            Toolkit.Prompt()
 
 
 

@@ -78,12 +78,13 @@ class WebOpTeacher():
 
         WebOp.shared_wd.find_element_by_css_selector('.fa-cloud-upload').click()  # 提交作业
         WebOp.shared_wd.find_element_by_css_selector('.item-download').click()  # 点击“+可一次性添加多个班级作答试卷”
-        # os.system(ExternalPath + 'uploadPicture.exe')  # 需要改进
         cmd = ExternalPath + 'uploadPicture.exe' + " " + picturePath
         submitPicture = subprocess.Popen(cmd)
         submitPicture.wait()
 
         WebOp.shared_wd.find_element_by_css_selector('button[selenium="upload"]').click() # 添加完成，开始上传
+        if not Toolkit.IsElementPresentxpath('//div[text()="上传确认"]'):
+            WebOp.shared_wd.find_element_by_css_selector('button[selenium="upload"]').click()  # 添加完成，开始上传
         Toolkit.is_visible('//span[@class="ng-scope"]')
         WebOp.shared_wd.find_element_by_xpath('//span[@class="ng-scope"]').click()   # 确认无误，开始上传
         Toolkit.is_visible('//a[@selenium="finish"]')

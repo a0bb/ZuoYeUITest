@@ -5,11 +5,11 @@ Variables  cfg.py
 
 
 *** Test Cases ***
-发送邮件 -- 6666
+发送邮件 - result002
     sleep  10
-    ${reportpath}=   set variable   C://Git//IntelligentCorrection//report.html
-    ${logpath}=      set variable   C://Git//IntelligentCorrection//log.html
-    ${reportlogpath}=   set variable  C://Git//IntelligentCorrection//reportlog.html
+    ${reportpath}=   set variable   C://Git//ZuoYeUITest//report.html
+    ${logpath}=      set variable   C://Git//ZuoYeUITest//log.html
+    ${reportlogpath}=   set variable  C://Git//ZuoYeUITest//reportlog.html
     open browser   ${reportpath}  chrome
     sleep  3
     ${detailContent}=   get text  Xpath=//table[@class="details"]

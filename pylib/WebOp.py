@@ -3,7 +3,7 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 
 class WebOp:
-
+    ROBOT_LIBRARY_SCOPE = 'GLOBAL'
     shared_wd = None
 
     def openBrowser(self):
