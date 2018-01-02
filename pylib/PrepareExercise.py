@@ -1,17 +1,15 @@
 # coding:utf8
 
-from selenium import webdriver
 from cfg import *
 from pylib import Toolkit
 from pylib.WebOp import WebOp
 from pylib.WebOpTeacher import WebOpTeacher
 from selenium.webdriver.common.keys import Keys
 import subprocess
-import os
 import time
 
 
-class PrepareExercise():
+class PrepareExercise:
     ROBOT_LIBRARY_SCOPE = 'GLOBAL'
     # 布置新作业--出卷服务
     def VolumeServer(self, exerciseName, leaveMassage):
@@ -59,7 +57,7 @@ class PrepareExercise():
         num = numEle.text[-2:]
         inputEle = WebOp.shared_wd.find_element_by_css_selector('div.labels>input')
         inputEle.send_keys(num)
-        WebOp.shared_wd.find_element_by_css_selector('div>button.btn-danger').click()  # 我知道了，取消任务
+        WebOp.shared_wd.find_element_by_css_selector('div>button.btn-danger').click()  # # 我已了解，继续
 
     # 布置新作业--模板出卷
     def Template(self, exerciseName):
@@ -131,21 +129,36 @@ class PrepareExercise():
 
         WebOp.shared_wd.find_element_by_css_selector('button[selenium="submit"]').click()  # 开始布置
 
+    # 布置新作业--试卷库出卷
+    def BookMark(self,exerciseName):
+        WebOpTeacher.EnterTab(WebOpTeacher(), u'试卷库')
+        WebOp.shared_wd.find_element_by_xpath('//div[text()="【SU】ScriptUser"]').click()
+        xpath = u'//span[text()="{}"]'.format(exerciseName)
+        WebOp.shared_wd.find_element_by_xpath(xpath).click()
+        Toolkit.is_visible('//button/span')
+        WebOp.shared_wd.find_element_by_css_selector('button.btn-success').click()     # 点击使用本试卷
+        Toolkit.is_visible('//div/a[@class="active"]')
+
+
     # 删除练习（在作业批改中这个阶段的）
-    def DeleteExcise(self, homeWork):
+    def DeleteExcise(self, homeWork,homeworkStatus):
+        # homework:作业名称
+        # homeworkStatus:作业状态（自助制卷中...|请提交作业|作业批改中|查看成绩）
         WebOpTeacher.EnterTab(WebOpTeacher(), u'首页')
         Toolkit.is_visible('//i[@class="fa fa-pencil"]')  # 确定已经切换到首页了
-        tabLinkXpath = u"//span[text()='{}']//../preceding-sibling::span/a[text()='查看成绩']".format(homeWork)  # 要删除练习的试卷名称（找在作业批改中的）
-        if Toolkit.IsElementPresentxpath(tabLinkXpath):
-            WebOpTeacher.FindHomeWork(WebOpTeacher(), homeWork)
-            homeWorkele = WebOp.shared_wd.find_element_by_xpath(tabLinkXpath)
-            homeWorkele.click()
-            WebOp.shared_wd.find_element_by_link_text('作业布置').click()  # 作业布置
-            WebOp.shared_wd.find_elements_by_css_selector('span.caret')[0].click()  # 编辑练习下拉框
-            WebOp.shared_wd.find_element_by_css_selector('a>span.ng-scope').click()  # 删除练习
-            # 对prompt对话框的操作
-            time.sleep(1)
-            Toolkit.Prompt()
+        tabLinkXpath = u"//span[text()='{}']//../preceding-sibling::span/a[text()='{}']".format(homeWork,homeworkStatus)  # 要删除练习的试卷名称（找在作业批改中的）
+        WebOpTeacher.FindHomeWork(WebOpTeacher(), homeWork)
+        homeWorkele = WebOp.shared_wd.find_elements_by_xpath(tabLinkXpath)[0]
+        homeWorkele.click()
+        WebOp.shared_wd.find_element_by_link_text('作业布置').click()  # 作业布置
+        WebOp.shared_wd.find_elements_by_css_selector('span.caret')[0].click()  # 编辑练习下拉框
+        WebOp.shared_wd.find_element_by_css_selector('a>span.ng-scope').click()  # 删除练习
+        numEle = WebOp.shared_wd.find_element_by_css_selector('div.modal-content div>label')
+        num = numEle.text[-2:]
+        inputEle = WebOp.shared_wd.find_element_by_css_selector('div.labels>input')
+        inputEle.send_keys(num)
+        WebOp.shared_wd.find_element_by_css_selector('div>button.btn-danger').click()  # 我已了解，继续
+
 
 # **************调试部分*******************
 def test():

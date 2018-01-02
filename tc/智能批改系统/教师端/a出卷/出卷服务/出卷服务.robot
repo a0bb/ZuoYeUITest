@@ -22,8 +22,8 @@ Library  pylib.Toolkit
 流程-取消出卷 - tc1002
     VolumeServer   d_SU高中英语（出卷服务）  好好学习，天天向上
     CancelServer  d_SU高中英语（出卷服务）
-    ${tohomepage}=   mygettext   //a[text()="回到首页"]
-    should be true  u"${tohomepage}" == u"回到首页"
+    ${tohomepage}=   mygettext   //div[@class="m-v-30"]/span
+    should be true  u"${tohomepage}" == u"本次制卷任务已取消"
     [Teardown]  Run Keywords  ChangeHandle        管理后台
                 ...  AND  DeleteAdminExcise   d_SU高中英语（出卷服务）
                 ...  AND  ChangeHandle        智能批改

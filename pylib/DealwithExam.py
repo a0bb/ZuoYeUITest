@@ -10,7 +10,7 @@ from selenium.webdriver.common.keys import Keys
 import time
 
 
-class DealwithExam():
+class DealwithExam:
     ROBOT_LIBRARY_SCOPE = 'GLOBAL'
     # 对考试列表中的“d_SU高中英语（模板出卷）”在任务面板进行处理（9张试卷）
     def ChooseTest(self,exciseName,paperNum):
