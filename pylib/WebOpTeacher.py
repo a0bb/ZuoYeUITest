@@ -97,6 +97,7 @@ class WebOpTeacher():
         currentTimeToD = time.strftime("%Y-%m-%d", time.localtime(time.time()))
         createpath = downFilePath + currentTimeToD + '\\'
         Toolkit.mkdir(createpath)
+        WebOp.shared_wd.refresh()
         self.EnterTab(u'首页')
         Toolkit.is_visible('//i[@class="fa fa-pencil"]')  # 确定已经切换到首页了
         self.FindHomeWork(homeWork)
@@ -107,15 +108,14 @@ class WebOpTeacher():
         WebOp.shared_wd.find_elements_by_css_selector('div.ng-scope>div.clearfix>div.ng-scope')[2].click()  # 成绩单
         WebOp.shared_wd.find_elements_by_css_selector('div.pull-right>button')[0].click() # 点击下载年级成绩单
         cmd = ExternalPath + "downloadfile.exe" + " " + createpath + u'年级成绩单.xls'
-        cmd = cmd.encode('gb2312')
-        pp = subprocess.Popen(cmd)
+        pp = subprocess.Popen(cmd.encode('gb2312'))
         pp.wait()
-        time.sleep(2)
+        # time.sleep(2)
 
         WebOp.shared_wd.find_elements_by_css_selector('div.pull-right>button')[1].click()  # 点击下载各班成绩单
+        Toolkit.is_visible('//span[text()=" 下载各班成绩单"]')     # 确定在“下载各班成绩单”的按钮出现（即弹出了下载框）执行下面步骤
         cmd = ExternalPath + "downloadfile.exe" + " " + createpath + u'各班成绩单（全年级成绩单）.zip'
-        cmd = cmd.encode('gb2312')
-        pp = subprocess.Popen(cmd)
+        pp = subprocess.Popen(cmd.encode('gb2312'))
         pp.wait()
         #time.sleep(3)
         WebOp.shared_wd.find_element_by_css_selector(u'button[title="1401班"]').click() # 点击1401班
@@ -155,13 +155,13 @@ class WebOpTeacher():
         WebOp.shared_wd.find_element_by_xpath(u'//div[text()="导出报告"]').click()  # 导出报告
         #dcbgele.send_keys(Keys.ENTER)
         WebOp.shared_wd.find_element_by_css_selector('div.section-body>button').click()  # 下载生成班级批阅报告
-        Toolkit.is_not_visible('//span[text()="生成报告中"]')  # 确定在“生成报告中”的按钮消失后执行下面步骤
+        Toolkit.is_visible('//span[text()=" 生成班级批阅报告"]')  # 确定在“生成班级批阅报告”的按钮出现（即弹出了下载框）执行下面步骤
         cmd = ExternalPath + 'downloadfile.exe' + " " + createpath + u'全部批阅报告.pdf'
         pp = subprocess.Popen(cmd.encode('gb2312'))
         pp.wait()
-        time.sleep(5)
+        # time.sleep(5)
         WebOp.shared_wd.find_element_by_css_selector('div.pull-right-sm>button').click() # 下载导出统计报告
-        Toolkit.is_not_visible('//span[text()="导出报告中"]')  # 确定在“导出报告中”的按钮消失后执行下面步骤
+        Toolkit.is_visible('//span[text()=" 导出统计报告"]')  # 确定在“导出统计报告”的按钮出现（即弹出了下载框）执行下面步骤
         cmd = ExternalPath + 'downloadfile.exe' + " " + createpath + u'统计报告.pdf'
         pp = subprocess.Popen(cmd.encode('gb2312'))
         pp.wait()
@@ -171,6 +171,7 @@ class WebOpTeacher():
     def GetGradeScore(self,homeWork):
         self.EnterTab(u'首页')
         Toolkit.is_visible('//i[@class="fa fa-pencil"]')  # 确定已经切换到首页了
+        WebOp.shared_wd.refresh()
         self.FindHomeWork(homeWork)  # 先找到这个作业
         tabLinkXpath = u"//span[text()='{}']//../preceding-sibling::span/a[text()='查看成绩']".format(homeWork)
         homeWorkele = WebOp.shared_wd.find_elements_by_xpath(tabLinkXpath)[0]

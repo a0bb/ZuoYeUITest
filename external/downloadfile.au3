@@ -4,7 +4,7 @@ ControlFocus("Áí´æÎª", "","Edit1")
 
 ; Wait 10 seconds for the Upload window to appear
 WinWait("[CLASS:#32770]","",10)
-Sleep(1000)
+Sleep(1500)
 ; Set the File name text on the Edit field
 
 ControlSetText("Áí´æÎª", "", "Edit1", $CmdLine[1])

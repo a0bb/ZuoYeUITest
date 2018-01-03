@@ -31,6 +31,6 @@ picturePath = 'C:\\Git\\ZuoYeUITest\\data\\englishpicture'  # 提交作业的图
 downFilePath = 'C:\\Git\\ZuoYeUITest\\download\\file\\'
 
 # 每天后端微信群反馈问题对应考试数量：errorExam  ；stable中每天一共的考试数:totalExam
-errorExam = 0
-totalExam = 31
+errorExam = 1
+totalExam = 21
 

@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20180103 20:26:05.256" generator="Robot 3.0.2 (Python 2.7.13 on win32)">
+<suite source="C:\Git\ZuoYeUITest\tc" id="s1" name="Tc">
+<suite source="C:\Git\ZuoYeUITest\tc\智能批改系统" id="s1-s1" name="智能批改系统">
+<kw type="setup" name="Open Browser" library="pylib.WebOp">
+<status status="PASS" endtime="20180103 20:26:08.758" starttime="20180103 20:26:05.330"></status>
+</kw>
+<suite source="C:\Git\ZuoYeUITest\tc\智能批改系统\教师端" id="s1-s1-s1" name="教师端">
+<kw type="setup" name="Run Keywords" library="BuiltIn">
+<doc>Executes all the given keywords in a sequence.</doc>
+<arguments>
+<arg>LoginWebSiteTeacher</arg>
+<arg>&amp;{TeacherUser}[name]</arg>
+<arg>&amp;{TeacherUser}[pw]</arg>
+<arg>AND</arg>
+<arg>LoginWebSiteAdmin</arg>
+<arg>AND</arg>
+<arg>ChangeHandle</arg>
+<arg>智能批改</arg>
+</arguments>
+<kw name="Login Web Site Teacher" library="pylib.WebOpTeacher">
+<arguments>
+<arg>&amp;{TeacherUser}[name]</arg>
+<arg>&amp;{TeacherUser}[pw]</arg>
+</arguments>
+<status status="PASS" endtime="20180103 20:26:49.727" starttime="20180103 20:26:08.776"></status>
+</kw>
+<kw name="Login Web Site Admin" library="pylib.WebOpAdmin">
+<status status="PASS" endtime="20180103 20:27:05.739" starttime="20180103 20:26:49.728"></status>
+</kw>
+<kw name="Change Handle" library="pylib.Toolkit">
+<arguments>
+<arg>智能批改</arg>
+</arguments>
+<status status="PASS" endtime="20180103 20:27:05.777" starttime="20180103 20:27:05.739"></status>
+</kw>
+<status status="PASS" endtime="20180103 20:27:05.777" starttime="20180103 20:26:08.776"></status>
+</kw>
+<suite source="C:\Git\ZuoYeUITest\tc\智能批改系统\教师端\a出卷" id="s1-s1-s1-s1" name="A出卷">
+<suite source="C:\Git\ZuoYeUITest\tc\智能批改系统\教师端\a出卷\试卷库出卷" id="s1-s1-s1-s1-s1" name="试卷库出卷">
+<suite source="C:\Git\ZuoYeUITest\tc\智能批改系统\教师端\a出卷\试卷库出卷\高考模拟测验_正常流程.robot" id="s1-s1-s1-s1-s1-s1" name="高考模拟测验 正常流程">
+<kw type="setup" name="suite setup action">
+<kw name="Book Mark" library="pylib.PrepareExercise">
+<arguments>
+<arg>高考模拟测验_正常流程</arg>
+</arguments>
+<status status="PASS" endtime="20180103 20:27:11.179" starttime="20180103 20:27:05.812"></status>
+</kw>
+<kw name="Submit Home Work" library="pylib.WebOpTeacher">
+<arguments>
+<arg>高考模拟测验_正常流程</arg>
+</arguments>
+<status status="PASS" endtime="20180103 20:27:28.812" starttime="20180103 20:27:11.180"></status>
+</kw>
+<kw name="Change Handle" library="pylib.Toolkit">
+<arguments>
+<arg>管理后台</arg>
+</arguments>
+<status status="PASS" endtime="20180103 20:27:28.926" starttime="20180103 20:27:28.813"></status>
+</kw>
+<kw name="Choose Test" library="pylib.DealwithExam.DealwithExam">
+<arguments>
+<arg>高考模拟测验_正常流程</arg>
+</arguments>
+<status status="PASS" endtime="20180103 20:28:00.961" starttime="20180103 20:27:28.926"></status>
+</kw>
+<kw name="Tu Pian Yu Chu Li" library="pylib.DealwithExam.DealwithExam">
+<status status="PASS" endtime="20180103 20:28:01.829" starttime="20180103 20:28:00.961"></status>
+</kw>
+<kw name="Tu Pian Yu Xue Sheng" library="pylib.DealwithExam.DealwithExam">
+<status status="PASS" endtime="20180103 20:28:04.148" starttime="20180103 20:28:01.830"></status>
+</kw>
+<kw name="Dealwith Un No" library="pylib.DealwithExam.DealwithExam">
+<arguments>
+<arg>高考模拟测验_正常流程</arg>
+</arguments>
+<status status="PASS" endtime="20180103 20:28:06.503" starttime="20180103 20:28:04.148"></status>
+</kw>
+<kw name="Xuan Ze Ti" library="pylib.DealwithExam.PictureAndGrade">
+<status status="PASS" endtime="20180103 20:28:07.975" starttime="20180103 20:28:06.503"></status>
+</kw>
+<kw name="Tian Kong Ti" library="pylib.DealwithExam.PictureAndGrade">
+<status status="PASS" endtime="20180103 20:29:04.418" starttime="20180103 20:28:07.976"></status>
+</kw>
+<kw name="Gai Cuo Ti" library="pylib.DealwithExam.PictureAndGrade">
+<status status="PASS" endtime="20180103 20:29:20.419" starttime="20180103 20:29:04.418"></status>
+</kw>
+<kw name="Da Fen Kuang" library="pylib.DealwithExam.PictureAndGrade">
+<status status="PASS" endtime="20180103 20:29:21.379" starttime="20180103 20:29:20.420"></status>
+</kw>
+<kw name="Shi Juan Da Fen" library="pylib.DealwithExam.PictureAndGrade">
+<status status="PASS" endtime="20180103 20:29:23.109" starttime="20180103 20:29:21.379"></status>
+</kw>
+<kw name="Xue Sheng Cheng Ji" library="pylib.DealwithExam.DealwithExam">
+<status status="PASS" endtime="20180103 20:29:23.390" starttime="20180103 20:29:23.109"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20180103 20:29:24.391" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20180103 20:29:24.391" starttime="20180103 20:29:23.391"></status>
+</kw>
+<status status="PASS" endtime="20180103 20:29:24.391" starttime="20180103 20:27:05.811"></status>
+</kw>
+<test id="s1-s1-s1-s1-s1-s1-t1" name="流程-检查总分 - tc1007">
+<kw name="Change Handle" library="pylib.Toolkit">
+<arguments>
+<arg>智能批改</arg>
+</arguments>
+<status status="PASS" endtime="20180103 20:29:24.420" starttime="20180103 20:29:24.392"></status>
+</kw>
+<kw name="Get Grade Score" library="pylib.WebOpTeacher">
+<arguments>
+<arg>高考模拟测验_正常流程</arg>
+</arguments>
+<assign>
+<var>${scores}</var>
+</assign>
+<msg timestamp="20180103 20:29:27.160" level="INFO">${scores} = [u'92.9', u'141', u'10']</msg>
+<status status="PASS" endtime="20180103 20:29:27.160" starttime="20180103 20:29:24.420"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${scores}</arg>
+</arguments>
+<status status="PASS" endtime="20180103 20:29:27.161" starttime="20180103 20:29:27.161"></status>
+</kw>
+<kw name="Create List" library="BuiltIn">
+<doc>Returns a list containing given items.</doc>
+<arguments>
+<arg>92.9</arg>
+<arg>141</arg>
+<arg>10</arg>
+</arguments>
+<assign>
+<var>${compareScore}</var>
+</assign>
+<msg timestamp="20180103 20:29:27.162" level="INFO">${compareScore} = [u'92.9', u'141', u'10']</msg>
+<status status="PASS" endtime="20180103 20:29:27.162" starttime="20180103 20:29:27.161"></status>
+</kw>
+<kw name="Lists Should Be Equal" library="Collections">
+<doc>Fails if given lists are unequal.</doc>
+<arguments>
+<arg>${scores}</arg>
+<arg>${compareScore}</arg>
+</arguments>
+<status status="PASS" endtime="20180103 20:29:27.163" starttime="20180103 20:29:27.162"></status>
+</kw>
+<status status="PASS" endtime="20180103 20:29:27.163" critical="yes" starttime="20180103 20:29:24.391"></status>
+</test>
+<kw type="teardown" name="Run Keywords" library="BuiltIn">
+<doc>Executes all the given keywords in a sequence.</doc>
+<arguments>
+<arg>deleteexcise</arg>
+<arg>高考模拟测验_正常流程</arg>
+<arg>查看成绩</arg>
+<arg>AND</arg>
+<arg>ChangeHandle</arg>
+<arg>管理后台</arg>
+<arg>AND</arg>
+<arg>DeleteAdminExcise</arg>
+<arg>高考模拟测验_正常流程</arg>
+<arg>AND</arg>
+<arg>ChangeHandle</arg>
+<arg>智能批改</arg>
+</arguments>
+<kw name="Delete Excise" library="pylib.PrepareExercise">
+<arguments>
+<arg>高考模拟测验_正常流程</arg>
+<arg>查看成绩</arg>
+</arguments>
+<status status="PASS" endtime="20180103 20:29:29.189" starttime="20180103 20:29:27.164"></status>
+</kw>
+<kw name="Change Handle" library="pylib.Toolkit">
+<arguments>
+<arg>管理后台</arg>
+</arguments>
+<status status="PASS" endtime="20180103 20:29:29.365" starttime="20180103 20:29:29.189"></status>
+</kw>
+<kw name="Delete Admin Excise" library="pylib.WebOpAdmin">
+<arguments>
+<arg>高考模拟测验_正常流程</arg>
+</arguments>
+<status status="PASS" endtime="20180103 20:29:29.786" starttime="20180103 20:29:29.366"></status>
+</kw>
+<kw name="Change Handle" library="pylib.Toolkit">
+<arguments>
+<arg>智能批改</arg>
+</arguments>
+<status status="PASS" endtime="20180103 20:29:29.976" starttime="20180103 20:29:29.786"></status>
+</kw>
+<status status="PASS" endtime="20180103 20:29:29.977" starttime="20180103 20:29:27.163"></status>
+</kw>
+<status status="PASS" endtime="20180103 20:29:29.977" starttime="20180103 20:27:05.788"></status>
+</suite>
+<status status="PASS" endtime="20180103 20:29:29.981" starttime="20180103 20:27:05.782"></status>
+</suite>
+<status status="PASS" endtime="20180103 20:29:29.985" starttime="20180103 20:27:05.777"></status>
+</suite>
+<status status="PASS" endtime="20180103 20:29:29.988" starttime="20180103 20:26:08.758"></status>
+</suite>
+<kw type="teardown" name="Close Browser" library="pylib.WebOp">
+<status status="PASS" endtime="20180103 20:29:33.218" starttime="20180103 20:29:29.991"></status>
+</kw>
+<status status="PASS" endtime="20180103 20:29:33.218" starttime="20180103 20:26:05.279"></status>
+</suite>
+<status status="PASS" endtime="20180103 20:29:33.225" starttime="20180103 20:26:05.260"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Tc" pass="1">Tc</stat>
+<stat fail="0" id="s1-s1" name="智能批改系统" pass="1">Tc.智能批改系统</stat>
+<stat fail="0" id="s1-s1-s1" name="教师端" pass="1">Tc.智能批改系统.教师端</stat>
+<stat fail="0" id="s1-s1-s1-s1" name="A出卷" pass="1">Tc.智能批改系统.教师端.A出卷</stat>
+<stat fail="0" id="s1-s1-s1-s1-s1" name="试卷库出卷" pass="1">Tc.智能批改系统.教师端.A出卷.试卷库出卷</stat>
+<stat fail="0" id="s1-s1-s1-s1-s1-s1" name="高考模拟测验 正常流程" pass="1">Tc.智能批改系统.教师端.A出卷.试卷库出卷.高考模拟测验 正常流程</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

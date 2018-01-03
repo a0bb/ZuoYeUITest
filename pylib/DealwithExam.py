@@ -6,27 +6,29 @@ from pylib.WebOp import WebOp
 from pylib import Toolkit
 from pylib.WebOpAdmin import WebOpAdmin
 from pylib.WebOpTeacher import WebOpTeacher
-from selenium.webdriver.common.keys import Keys
 import time
 
 
 class DealwithExam:
     ROBOT_LIBRARY_SCOPE = 'GLOBAL'
     # 对考试列表中的“d_SU高中英语（模板出卷）”在任务面板进行处理（9张试卷）
-    def ChooseTest(self,exciseName,paperNum):
+    def ChooseTest(self,exciseName):
         WebOp.shared_wd.find_element_by_css_selector(u'span[title="考试列表"]').click() # 选择考试列表
         Toolkit.is_visible('//span[text()="考试名称"]')
         WebOp.shared_wd.find_elements_by_css_selector('table.channel-table td')[0].click()  # 点击全部
         WebOp.shared_wd.find_elements_by_link_text(exciseName)[0].click()  # 选择考试“d_SU高中英语（模板出卷）”
         WebOp.shared_wd.find_element_by_css_selector('div.btn-group>a.border').click()  # 点击任务面板
         while True:   # 判断上传的作业在后台是否都跑完，跑完在继续后续步骤
+            papernumele = WebOp.shared_wd.find_element_by_css_selector('div.col-sm-4>div:nth-child(2)>div:nth-child(1)')
             paperanaumele = WebOp.shared_wd.find_element_by_css_selector('div.col-sm-4>div:nth-child(2)>div:nth-child(2)')
             num = int(paperanaumele.text[:-1])
-            if paperNum != num:
-                time.sleep(1.5)
+            totalnum = int(papernumele.text[:-1])
+            if totalnum != num:
+                time.sleep(2.5)
                 WebOp.shared_wd.refresh()
             else:
                 break
+        return totalnum
 
     # 第1步--图片预处理
     def TuPianYuChuLi(self):
@@ -48,12 +50,12 @@ class DealwithExam:
         else:
             # 加入处理学生关联的情况，第一页交给用户处理，剩余的后台处理
             WebOp.shared_wd.find_element_by_xpath('//span[text()="交给用户处理"]').click()
-            # Toolkit.is_not_visible('//span[text()="提交中"]')  # TODO
+            # Toolkit.is_not_visible('//span[text()="提交中"]')
             if not Toolkit.IsElementPresentcss('button.btn-default'):
                 for one in range(99):
                     WebOp.shared_wd.find_element_by_css_selector('div.students>div:nth-child(1)').click()
                     WebOp.shared_wd.find_element_by_css_selector('button.btn-success>span.ng-scope').click()
-                    # Toolkit.is_not_visible('//span[text()="提交中"]')  # TODO
+                    # Toolkit.is_not_visible('//span[text()="提交中"]')
                     if Toolkit.IsElementPresentcss('button.btn-default'):
                         break
                 Toolkit.is_visible('//div[@class="text-center"]/button[text()="返回"]')
@@ -81,7 +83,7 @@ class DealwithExam:
         WebOp.shared_wd.find_element_by_css_selector('div>button.btn-white').click()
 
 # 第2B步--图片与成绩
-class PictureAndGrade():
+class PictureAndGrade:
     ROBOT_LIBRARY_SCOPE = 'GLOBAL'
     # 选择题
     def XuanZeTi(self):
@@ -164,29 +166,29 @@ class PictureAndGrade():
                 WebOp.shared_wd.find_element_by_css_selector('div.pull-right>button').click()  # 点击返回
                 time.sleep(1)
 
-    # 作文题
-    def ZuoWenTi(self):
-        Toolkit.is_visible(u'//div[text()="第2B步 - 图片与成绩"]')
-        if not Toolkit.IsElementPresentcss('tr[auth="paper_score||is_super"]>td.text-center>a'):  # 判断第2B步 图片与成绩 是不是展开的
-            WebOp.shared_wd.find_element_by_css_selector(
-                'div[auth="marking_choice||marking_blanks||blank_score||blank_tag||marking_correction||marking_writing||marking_scores||paper_score||is_super"]').click()
-        if Toolkit.IsElementPresentcss('tr[auth="marking_writing||is_super"]'):  # 判断作文题是否存在
-            WebOp.shared_wd.find_element_by_css_selector(
-                'tr[auth="marking_writing||is_super"]>td>a.btn-success').click()
-            if not Toolkit.IsElementPresentcss('table>tbody>tr:nth-child(1)'):
-                WebOp.shared_wd.find_element_by_css_selector('div.pull-right>button').click()  # 返回
-            else:
-                while True:
-                    if not Toolkit.IsElementPresentcss(u'span[tooltip-html-unsafe="未标注"]'):
-                        break
-                    else:
-                        biaozhuEles = WebOp.shared_wd.find_elements_by_xpath \
-                            (u'//tr/td[position()=2]/span[@tooltip-html-unsafe="未标注"]/../following-sibling::td[position()=18]/a[text()="标注"]')
-                        for biaozhuele in biaozhuEles:
-                            biaozhuele.click()
-                            WebOp.shared_wd.find_element_by_css_selector('button.btn-success').click()
-                            WebOp.shared_wd.find_element_by_xpath(u'//button[text()="返回"]').send_keys(Keys.ENTER)
-                            break
+    # 作文题（作文题自动批阅不需要标注，如果需要标注则 是跑失败或者出了bug）
+    # def ZuoWenTi(self):
+    #     Toolkit.is_visible(u'//div[text()="第2B步 - 图片与成绩"]')
+    #     if not Toolkit.IsElementPresentcss('tr[auth="paper_score||is_super"]>td.text-center>a'):  # 判断第2B步 图片与成绩 是不是展开的
+    #         WebOp.shared_wd.find_element_by_css_selector(
+    #             'div[auth="marking_choice||marking_blanks||blank_score||blank_tag||marking_correction||marking_writing||marking_scores||paper_score||is_super"]').click()
+    #     if Toolkit.IsElementPresentcss('tr[auth="marking_writing||is_super"]'):  # 判断作文题是否存在
+    #         WebOp.shared_wd.find_element_by_css_selector(
+    #             'tr[auth="marking_writing||is_super"]>td>a.btn-success').click()
+    #         if not Toolkit.IsElementPresentcss('table>tbody>tr:nth-child(1)'):
+    #             WebOp.shared_wd.find_element_by_css_selector('div.pull-right>button').click()  # 返回
+    #         else:
+    #             while True:
+    #                 if not Toolkit.IsElementPresentcss(u'span[tooltip-html-unsafe="未标注"]'):
+    #                     break
+    #                 else:
+    #                     biaozhuEles = WebOp.shared_wd.find_elements_by_xpath \
+    #                         (u'//tr/td[position()=2]/span[@tooltip-html-unsafe="未标注"]/../following-sibling::td[position()=18]/a[text()="标注"]')
+    #                     for biaozhuele in biaozhuEles:
+    #                         biaozhuele.click()
+    #                         WebOp.shared_wd.find_element_by_css_selector('button.btn-success').click()
+    #                         WebOp.shared_wd.find_element_by_xpath(u'//button[text()="返回"]').send_keys(Keys.ENTER)
+    #                         break
 
     # 打分框
     def DaFenKuang(self):
