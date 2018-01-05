@@ -1,1 +1,1 @@
-<br><font size='4' style='font-weight:bold;'>请求概况  出错请求数量：142，总请求数量：385488，出错请求占比：0.036836%</font><br><font size='4' style='font-weight:bold;'>后端群反馈问题概况  反馈问题对应考试数量：1，发布的考试的数量：21，有问题考试占比：4.76%</font>
+<br><font size='4' style='font-weight:bold;'>请求概况  出错请求数量：586，总请求数量：361998，出错请求占比：0.161879%</font><br><font size='4' style='font-weight:bold;'>后端群反馈问题概况  反馈问题对应考试数量：1，发布的考试的数量：23，有问题考试占比：4.35%</font>

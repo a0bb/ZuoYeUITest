@@ -110,6 +110,7 @@ def ChangeHandle(title):
     for handle in handles:
         WebOp.shared_wd.switch_to_window(handle)
         if title in WebOp.shared_wd.title:
+            # 为了changehandle之后的操作操作的是最新的内容
             break
 
 # 获取element的Text，参数为想要获取的text的element的xpath值

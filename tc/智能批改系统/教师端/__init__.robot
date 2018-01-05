@@ -1,6 +1,6 @@
 *** Settings ***
 Library    Collections
-Variables  cfg.py
+Variables  config/cfg.py
 Library    pylib.WebOpTeacher
 Library    pylib.WebOpAdmin
 Library    pylib.Toolkit

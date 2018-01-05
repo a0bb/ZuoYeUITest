@@ -1,7 +1,7 @@
 # coding:utf8
 
 from selenium import webdriver
-from cfg import *
+from config.cfg import *
 from pylib.WebOp import WebOp
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.action_chains import ActionChains

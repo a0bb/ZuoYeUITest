@@ -1,7 +1,7 @@
 *** Settings ***
 Library  Selenium2Library
 Library  pylib.Result
-Variables  cfg.py
+Variables  config/cfg.py
 
 
 *** Test Cases ***

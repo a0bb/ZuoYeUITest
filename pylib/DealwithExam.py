@@ -1,7 +1,7 @@
 # coding:utf8
 
 from selenium import webdriver
-from cfg import *
+from config.cfg import *
 from pylib.WebOp import WebOp
 from pylib import Toolkit
 from pylib.WebOpAdmin import WebOpAdmin
@@ -15,6 +15,7 @@ class DealwithExam:
     def ChooseTest(self,exciseName):
         WebOp.shared_wd.find_element_by_css_selector(u'span[title="考试列表"]').click() # 选择考试列表
         Toolkit.is_visible('//span[text()="考试名称"]')
+        WebOp.shared_wd.refresh()
         WebOp.shared_wd.find_elements_by_css_selector('table.channel-table td')[0].click()  # 点击全部
         WebOp.shared_wd.find_elements_by_link_text(exciseName)[0].click()  # 选择考试“d_SU高中英语（模板出卷）”
         WebOp.shared_wd.find_element_by_css_selector('div.btn-group>a.border').click()  # 点击任务面板

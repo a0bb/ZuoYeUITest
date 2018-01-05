@@ -1,7 +1,7 @@
 # coding=utf8
 
 import sys,os
-from cfg import *
+from config.cfg import *
 
 # casefile = sys.argv[1]
 casefile = rootPath + 'tclist.txt'

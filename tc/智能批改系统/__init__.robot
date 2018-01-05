@@ -1,5 +1,5 @@
 *** Settings ***
-Variables  cfg.py
+Variables  config/cfg.py
 Library  pylib.WebOp
 
 Suite Setup      openBrowser

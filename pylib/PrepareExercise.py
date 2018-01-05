@@ -1,6 +1,6 @@
 # coding:utf8
 
-from cfg import *
+from config.cfg import *
 from pylib import Toolkit
 from pylib.WebOp import WebOp
 from pylib.WebOpTeacher import WebOpTeacher

@@ -1,7 +1,7 @@
 # coding:utf8
 import paramiko
 import time
-import cfg
+import config.cfg as cfg
 import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart

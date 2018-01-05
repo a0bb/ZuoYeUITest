@@ -1,6 +1,6 @@
 # coding:utf8
 
-from cfg import *
+from config.cfg import *
 from pylib.WebOp import WebOp
 from selenium.webdriver.common.action_chains import ActionChains
 from pylib import Toolkit
@@ -28,6 +28,7 @@ class WebOpAdmin():
     def DeleteAdminExcise(self,exciseName):
         WebOp.shared_wd.find_element_by_css_selector(u'span[title="考试列表"]').click()  # 选择考试列表
         Toolkit.is_visible('//span[text()="考试名称"]')
+        WebOp.shared_wd.refresh()
         WebOp.shared_wd.find_elements_by_css_selector('table.channel-table td')[0].click()  # 点击全部
         xpath = u'//a[text()="{}"]//..//following-sibling::td//a//span[text()="删除"]'.format(exciseName)
         if Toolkit.IsElementPresentxpath(xpath):
